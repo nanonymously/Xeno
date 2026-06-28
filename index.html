@@ -4,401 +4,252 @@
 <title>Q3 Marketing Plan — Quarterly Leader Brief</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
- --blue:#1F73FF; --blue-d:#1559c4; --ink:#16233c; --muted:#6b7a93; --line:#e7edf6; --bg:#f4f7fc; --soft:#eef4ff; --soft2:#f6f9ff;
- --green:#1f9d6b; --amber:#c8870f; --red:#cf3a2c; --shadow:0 6px 22px rgba(28,52,99,.07);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.62;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:1020px;margin:0 auto;padding:0 22px 100px;}
-
-/* hero */
-.hero{background:radial-gradient(1200px 380px at 12% -10%,#e3eeff 0%,rgba(227,238,255,0) 60%),linear-gradient(180deg,#ffffff, #f4f7fc);padding:44px 0 8px;}
-.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-size:11px;font-weight:600;letter-spacing:.08em;padding:6px 13px;border-radius:30px;text-transform:uppercase;}
-h1{font-size:38px;font-weight:800;margin:16px 0 4px;letter-spacing:-.02em;line-height:1.1;}
-.meta{color:var(--muted);font-size:14px;font-weight:500;}
-.oneline{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:17px 22px;margin:22px 0 4px;font-size:16px;box-shadow:var(--shadow);}
-
-/* sticky nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(244,247,252,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-top:24px;}
-.nav-in{max-width:1020px;margin:0 auto;padding:10px 22px;display:flex;gap:8px;flex-wrap:wrap;}
-.nav a{font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;padding:7px 13px;border-radius:30px;transition:.15s;border:1px solid transparent;}
-.nav a:hover{color:var(--blue-d);background:#fff;border-color:var(--line);}
-.nav a.active{color:#fff;background:var(--blue);}
-
-/* tiles */
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0 4px;}
-.tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);}
-.tile .n{font-size:30px;font-weight:800;color:var(--blue);letter-spacing:-.01em;}
-.tile .l{font-size:12.5px;color:var(--muted);font-weight:500;margin-top:1px;}
-
-section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 32px;margin:18px 0;box-shadow:var(--shadow);opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;}
-section.in{opacity:1;transform:none;}
-.sec-h{display:flex;align-items:center;gap:13px;margin:0 0 16px;}
-.sec-n{flex:none;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#4d92ff);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(31,115,255,.3);}
-h2{font-size:21px;font-weight:700;margin:0;letter-spacing:-.01em;}
-h3{font-size:15px;font-weight:600;margin:20px 0 7px;}
-p{margin:9px 0;} strong{font-weight:600;}
-.note{color:var(--muted);font-size:13.5px;}
-ul{margin:8px 0;padding-left:20px;} li{margin:5px 0;}
-
-/* funnel / stepper */
-.funnel{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:6px 0 8px;}
-.step{flex:1;min-width:150px;background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;position:relative;}
-.step .big{font-size:30px;font-weight:800;color:var(--ink);}
-.step .lab{font-size:12.5px;color:var(--muted);font-weight:500;}
-.step.win .big{color:var(--blue);}
-.chev{display:flex;align-items:center;justify-content:center;color:#b9c6dc;font-size:22px;padding:0 10px;flex:none;}
-.leakbox{margin-top:12px;background:#fdecea;border:1px solid #f6cdc7;color:var(--red);border-radius:10px;padding:9px 14px;font-size:13px;font-weight:500;}
-
-.kpi-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:var(--soft);border-radius:12px;padding:14px 18px;}
-
-/* worry cards */
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.mini{background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:17px 18px;transition:.18s;}
-.mini:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
-.mini .ic{width:34px;height:34px;border-radius:9px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:9px;}
-.mini .t{font-weight:600;font-size:14.5px;margin-bottom:4px;}
-.mini .d{font-size:13px;color:var(--muted);}
-
-/* commitments */
-.bet{background:linear-gradient(120deg,#eef4ff,#f6f9ff);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:14px;font-size:14.5px;}
-.commit{border:1px solid var(--line);border-radius:14px;padding:0;margin:12px 0;overflow:hidden;transition:.18s;}
-.commit:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
-.commit .top{display:flex;align-items:center;gap:11px;background:var(--soft2);padding:13px 18px;border-bottom:1px solid var(--line);}
-.commit .cn{flex:none;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
-.commit .ttl{font-weight:600;font-size:15.5px;}
-.commit .body{padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:9px 24px;font-size:13.5px;}
-.commit .k{color:var(--blue-d);font-weight:600;display:block;font-size:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:1px;}
-.commit .full{grid-column:1 / -1;}
-
-table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px;}
-th{background:var(--blue);color:#fff;text-align:left;padding:10px 12px;font-weight:600;}
-td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
-tr:nth-child(even) td{background:#fafcff;}
-.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;}
-.pill.dep{background:#e8f0fe;color:var(--blue-d);} .pill.dec{background:#fff4df;color:var(--amber);} .pill.con{background:#fdeae7;color:var(--red);}
-
-/* options */
-.q-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:12px 0;}
-.opt{border:1px solid var(--line);border-radius:14px;padding:15px 17px;background:var(--soft2);font-size:13.5px;transition:.18s;}
-.opt:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
-.opt.rec{border:2px solid var(--blue);background:#fff;}
-.opt .h{font-weight:600;margin-bottom:5px;display:flex;justify-content:space-between;align-items:center;}
-.star{color:var(--blue);font-size:12px;font-weight:700;}
-.recbox{background:var(--soft);border-radius:12px;padding:14px 18px;margin-top:8px;font-size:14px;}
-.tier{border:1px solid var(--line);border-radius:14px;padding:6px 18px 14px;margin:12px 0;background:var(--soft2);}
-.tier-h{font-weight:600;font-size:15px;margin:13px 0 2px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-.tier ul{margin:6px 0;} .tier li{font-size:13.5px;}
-.badge{font-size:11px;font-weight:700;padding:3px 11px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;}
-.badge.t1{background:var(--blue);} .badge.t2{background:#5a8de0;} .badge.t3{background:#9fb3cf;}
-.dq{font-size:13px;}
-
-/* tabs */
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
-.tabs button{font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);background:var(--soft2);border:1px solid var(--line);padding:9px 15px;border-radius:30px;cursor:pointer;transition:.15s;}
-.tabs button:hover{color:var(--blue-d);}
-.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 4px 10px rgba(31,115,255,.25);}
-.panel{display:none;} .panel.on{display:block;animation:fade .25s ease;}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
-.phasebar{display:flex;gap:8px;margin:4px 0 14px;}
-.phase{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px;border-radius:10px;}
-.p1{background:#eef4ff;color:var(--blue-d);} .p2{background:#fff4df;color:var(--amber);} .p3{background:#e8f7ef;color:var(--green);}
-.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:30px;}
-@media(max-width:760px){.tiles{grid-template-columns:repeat(2,1fr)}.cards3,.q-opts{grid-template-columns:1fr}.commit .body{grid-template-columns:1fr}h1{font-size:30px}}
+:root{--blue:#1F73FF;--blue-d:#1559c4;--ink:#16233c;--muted:#6b7a93;--line:#e7edf6;--bg:#f4f7fc;--soft:#eef4ff;--soft2:#f6f9ff;--green:#1f9d6b;--amber:#c8870f;--red:#cf3a2c;--shadow:0 6px 22px rgba(28,52,99,.07);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
+.topbar{background:#16233c;color:#fff;padding:10px 22px;display:flex;gap:20px;align-items:center;font:600 13px/1 Poppins,sans-serif;flex-wrap:wrap}
+.topbar span{opacity:.85}.topbar a{color:#9fd0ff;text-decoration:none}.topbar a:hover{color:#fff}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px 90px}
+.hero{background:radial-gradient(1100px 360px at 12% -10%,#e3eeff 0%,rgba(227,238,255,0) 60%);padding:40px 0 6px}
+.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-size:11px;font-weight:600;letter-spacing:.07em;padding:6px 13px;border-radius:30px;text-transform:uppercase}
+h1{font-size:36px;font-weight:800;margin:14px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:14px;font-weight:500}
+.oneline{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:16px 20px;margin:20px 0 4px;font-size:15.5px;box-shadow:var(--shadow)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 4px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+.tile .n{font-size:24px;font-weight:800;color:var(--blue)}.tile .l{font-size:12px;color:var(--muted);font-weight:500;margin-top:2px}
+section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 30px;margin:18px 0;box-shadow:var(--shadow)}
+.sec-h{display:flex;align-items:center;gap:12px;margin:0 0 14px}
+.sec-n{flex:none;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--blue),#4d92ff);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+h2{font-size:20px;font-weight:700;margin:0}
+h3{font-size:15px;font-weight:600;margin:18px 0 7px;color:var(--blue-d)}
+p{margin:9px 0}strong{font-weight:600}.note{color:var(--muted);font-size:13.5px}
+ul{margin:8px 0;padding-left:20px}li{margin:5px 0}
+.funnel{display:flex;align-items:stretch;flex-wrap:wrap;margin:6px 0 8px}
+.step{flex:1;min-width:140px;background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:15px 18px}
+.step .big{font-size:28px;font-weight:800}.step .lab{font-size:12px;color:var(--muted);font-weight:500}.step.win .big{color:var(--blue)}
+.chev{display:flex;align-items:center;justify-content:center;color:#b9c6dc;font-size:20px;padding:0 10px}
+.callout{margin-top:12px;background:#fdecea;border:1px solid #f6cdc7;color:#9e2b20;border-radius:10px;padding:10px 15px;font-size:13px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mini{background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.mini .t{font-weight:600;font-size:14.5px;margin-bottom:4px}.mini .d{font-size:13px;color:var(--muted)}
+.act{border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.act .top{display:flex;align-items:center;gap:11px;background:var(--soft2);padding:12px 18px;border-bottom:1px solid var(--line)}
+.act .cn{flex:none;width:25px;height:25px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.act .ttl{font-weight:600;font-size:15px}.act .body{padding:13px 18px;font-size:13.7px}
+.badge{font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-right:5px}
+.b-ent{background:var(--blue)}.b-lrg{background:#5a8de0}.b-mid{background:#9fb3cf}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.4px}
+th{background:var(--blue);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#fafcff}
+.prereq{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:8px 0}
+.pr{background:var(--soft2);border:1px solid var(--line);border-radius:11px;padding:11px 14px;font-size:13.3px}
+.cta{background:linear-gradient(120deg,#eef4ff,#f6f9ff);border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin:18px 0}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase}
+.pill.dep{background:#e8f0fe;color:var(--blue-d)}.pill.dec{background:#fff4df;color:var(--amber)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tabs button{font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);background:var(--soft2);border:1px solid var(--line);padding:8px 14px;border-radius:30px;cursor:pointer}
+.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.panel{display:none}.panel.on{display:block}
+.phasebar{display:flex;gap:8px;margin:4px 0 12px}.phase{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px;border-radius:10px}
+.p1{background:#eef4ff;color:var(--blue-d)}.p2{background:#fff4df;color:var(--amber)}.p3{background:#e8f7ef;color:var(--green)}
+.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
+@media(max-width:760px){.tiles,.cards3,.prereq{grid-template-columns:1fr}h1{font-size:29px}}
 </style></head>
 <body>
-<div style="background:#16233c;color:#fff;padding:10px 22px;display:flex;gap:20px;align-items:center;font:600 13px/1 Poppins,sans-serif;flex-wrap:wrap"><span style="opacity:.85">Xeno Q3 — one source of truth:</span><a href="./" style="color:#fff;text-decoration:none">🏠 Home</a><a href="Q3plan/" style="color:#9fd0ff;text-decoration:none">📋 Full Q3 Plan</a><a href="Q3plan/calendar/" style="color:#9fd0ff;text-decoration:none">📅 Calendar</a><a href="year-one/" style="color:#9fd0ff;text-decoration:none">🌟 Year One</a></div>
+<div class="topbar"><span>Xeno Q3 — one source of truth:</span>
+<a href="/Xeno/">🏠 Home</a>
+<a href="/Xeno/Q3plan/">📋 Full Q3 Plan</a>
+<a href="/Xeno/Q3plan/calendar/">📅 Calendar</a>
+<a href="/Xeno/year-one/">🌟 Year One</a></div>
 
 <div class="hero"><div class="wrap" style="padding-bottom:0">
- <span class="tag">Xeno · Marketing · Quarterly Leader Brief</span>
- <h1>Q3 Marketing Plan</h1>
- <div class="meta">Nandita Khanna · Q3 2026 (Jul–Sep) · reviewing Q2 (Apr–Jun)</div>
- <div class="oneline"><strong>In one line:</strong> Fix conversion, not volume — work a focused Top 50 + Next 200, hand sales fewer but higher-quality leads, and run only the activities that have actually produced SQLs, to hit <strong>10 SQLs in Q3</strong> while pre-building the October launch.</div>
-</div></div>
-
-<div class="nav"><div class="nav-in">
- <a href="#s1">1 · Q2 vs goal</a>
- <a href="#s2">2 · Keeping me up</a>
- <a href="#s3">3 · The plan</a>
- <a href="#s4">4 · What I need</a>
- <a href="#s5">5 · The conversation</a>
- <a href="#detail">+ Detail</a>
+<span class="tag">Xeno · Marketing · Quarterly Leader Brief</span>
+<h1>Q3 Marketing Plan</h1>
+<div class="meta">Nandita Khanna · Q3 2026 (Jul–Sep) · reviewing Q2 (Apr–Jun)</div>
+<div class="oneline"><strong>In one line:</strong> Fix conversion, not volume — work a focused Enterprise + Large list, hand sales fewer but higher-quality leads, and double down only on what has produced SQLs, to drive <strong>10 SQLs in Q3</strong> while pre-building the October launch.</div>
 </div></div>
 
 <div class="wrap">
-
 <div class="tiles">
- <div class="tile"><div class="n" data-c="10">0</div><div class="l">Q3 SQL target — all in</div></div>
- <div class="tile"><div class="n"><span data-c="5">0</span> / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
- <div class="tile"><div class="n" data-c="250">0</div><div class="l">Focus accounts (Top 50 + 200)</div></div>
- <div class="tile"><div class="n">~₹1.5–2L</div><div class="l">Q3 budget ask</div></div>
+ <div class="tile"><div class="n">10</div><div class="l">Q3 SQL target — all in</div></div>
+ <div class="tile"><div class="n">5 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
+ <div class="tile"><div class="n">50 · 200 · rest</div><div class="l">Enterprise · Large · Mid</div></div>
+ <div class="tile"><div class="n">~₹2L</div><div class="l">Q3 budget ask</div></div>
 </div>
 
 <!-- 1 -->
-<section id="s1">
- <div class="sec-h"><div class="sec-n">1</div><h2>Q2 performance vs. the goal</h2></div>
- <div class="funnel">
-   <div class="step"><div class="big" data-c="82">0</div><div class="lab">Relevant engagements</div></div>
-   <div class="chev">→</div>
-   <div class="step"><div class="big" data-c="4">0</div><div class="lab">Meetings</div></div>
-   <div class="chev">→</div>
-   <div class="step win"><div class="big"><span data-c="5">0</span> <span style="font-size:16px;color:var(--muted)">/ 7</span></div><div class="lab">SQLs · actual / goal</div></div>
- </div>
- <div class="leakbox">The leak is here: 82 engagements produced only 4 meetings — and some "SQLs" were actually outbound, so clean marketing-sourced was lower still. Q3 fixes this conversion, not the volume.</div>
- <p class="note" style="margin-top:14px"><strong>Side note (not the headline):</strong> beyond the number, Q2 ran 56 campaigns / 66,810 emails and introduced new interactive formats (Squid Games, Loyalty Dilemma) that produced our most recent SQLs. A full Q2 report can follow if useful — this brief stays on the one metric that matters.</p>
+<section>
+ <div class="sec-h"><div class="sec-n">1</div><h2>What's needed from marketing</h2></div>
+ <p>From Pranav's review and the Signal Touch org plan, the mandate is clear: marketing exists to create <strong>qualified meetings that become SQLs</strong> — and to pre-build the October Signal Touch launch. Not vanity reach, not activity for its own sake.</p>
+ <p>So this quarter is deliberately about <strong>conversion over volume</strong>: a focused account list, only the activities that have actually produced SQLs, and a clean hand-off to sales. The target is <strong>10 SQLs</strong> — a stretch we go all-in on; even if the real win is a system that lands it next quarter, that's success.</p>
 </section>
 
 <!-- 2 -->
-<section id="s2">
- <div class="sec-h"><div class="sec-n">2</div><h2>What's keeping me up at night</h2></div>
- <div class="cards3">
-   <div class="mini"><div class="ic">📊</div><div class="t">1 · Data gap</div><div class="d">Only ~6% of contacts &amp; companies meet a basic data standard. Title, LinkedIn, revenue, category are thin in <em>both</em> Clarify and HubSpot — so we keep engaging the wrong POC.</div></div>
-   <div class="mini"><div class="ic">🔍</div><div class="t">2 · Tracking gap</div><div class="d">Marketing's contribution is unprovable today. We can track neither activation→SQL time nor attribution. Whatever we report, we can't prove.</div></div>
-   <div class="mini"><div class="ic">💸</div><div class="t">3 · Budget</div><div class="d">Spend decisions (gifting, events, tooling) get made without marketing in the loop and without an "is this working?" test.</div></div>
+<section>
+ <div class="sec-h"><div class="sec-n">2</div><h2>What we did last year &amp; what worked</h2></div>
+ <p><strong>Built the engine from zero.</strong> A year ago there was no domain, no HubSpot, no infrastructure. Since then: full marketing + GTM / demand-gen ops, all email campaigns, LinkedIn + founder brand, 4 webinars/events, 24 demand-gen assets (excl. Shivalika's), client gifting, hyper-personalised ABM, multiple website updates, quarter-on-quarter planning, a hire, and <strong>~2,23,000 emails</strong> sent. Outcome: <strong>14 SQLs and 5 deals won</strong>, marketing-sourced or influenced.</p>
+
+ <h3>Q2 funnel</h3>
+ <div class="funnel">
+   <div class="step"><div class="big">82</div><div class="lab">Relevant engagements</div></div>
+   <div class="chev">→</div>
+   <div class="step"><div class="big">4</div><div class="lab">Meetings (logged)</div></div>
+   <div class="chev">→</div>
+   <div class="step win"><div class="big">5 <span style="font-size:15px;color:var(--muted)">/ 7</span></div><div class="lab">SQLs · actual / goal</div></div>
  </div>
- <h3>The data reality — field fill today</h3>
- <table class="dq">
-  <tr><th>Field</th><th>Clarify</th><th>HubSpot</th></tr>
-  <tr><td>Email</td><td>80%</td><td>~100%</td></tr>
-  <tr><td>First / Last name</td><td>99% / 19%</td><td>— / 49%</td></tr>
-  <tr><td>Job title</td><td>48%</td><td>29%</td></tr>
-  <tr><td>LinkedIn</td><td>51%</td><td>—</td></tr>
-  <tr><td>Company (name)</td><td>71%</td><td>93%</td></tr>
-  <tr><td>Company domain / LinkedIn</td><td>99% / 71%</td><td>—</td></tr>
-  <tr><td>Company revenue / category</td><td>15% / 14%</td><td>—</td></tr>
- </table>
- <p class="note">Only ~<strong>6%</strong> of records clear the full minimum standard. Clarify holds firmographics; HubSpot holds email + engagement — both thin on the fields we most need (title, LinkedIn, revenue, category).</p>
- <p class="note">All three are real; if forced to one, the deepest is the <strong>tracking gap</strong> — until we can prove it, every other number is contestable.</p>
+ <div class="callout">The 82 → 5 drop isn't all failure. Some became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
+
+ <h3>What's actually working (so we double down)</h3>
+ <ul>
+  <li><strong>Events &amp; webinars</strong> — our highest-intent, highest-quality source.</li>
+  <li><strong>Inbound</strong> — best conversion per touch (when we can see where it came from).</li>
+  <li><strong>Interactive content</strong> — games + case studies (Squid Games, Loyalty Dilemma) drove our most recent SQLs.</li>
+  <li><strong>Client gifting</strong> — punched above its cost.</li>
+ </ul>
+ <p class="note">Note on the numbers: these are marketing-sourced <em>or influenced</em> — cleaning up that attribution is itself a Q3 commitment, not a claim to hide behind.</p>
 </section>
 
 <!-- 3 -->
-<section id="s3">
- <div class="sec-h"><div class="sec-n">3</div><h2>The Q3 plan — the bet &amp; commitments</h2></div>
- <div class="bet"><strong>The bet:</strong> concentrate on the Top 50 + Next 200, run only what has produced SQLs (events, ABM + interactive campaigns, inbound), and qualify hard so sales gets fewer, better leads. <strong>Deliberately NOT doing:</strong> generic playbook/blog blasts, new channels (no paid/SEO), and working the whole 5,876.</div>
-
- <div class="commit"><div class="top"><div class="cn">1</div><div class="ttl">Deliver 10 marketing-sourced SQLs</div></div>
-  <div class="body">
-   <div><span class="k">Done when</span> 10 SQLs, buyer-level &amp; logged — by 30 Sep · owner: Nandita</div>
-   <div><span class="k">Assumption</span> every Hot lead gets an owner, is actioned within 24h, and its status is updated</div>
-   <div class="full"><span class="k">How I'll get there</span> three activities — intimate events (Top 50), ABM + interactive/game campaigns (Top 50 + 200), and inbound/case studies. Every ICP engagement is scored; only "Hot" (right account + real intent) goes to sales, within 24h.</div>
-  </div>
- </div>
-
- <div class="commit"><div class="top"><div class="cn">2</div><div class="ttl">A clean, tiered, usable target list</div></div>
-  <div class="body">
-   <div><span class="k">Done when</span> Top 50 + Next 200 <strong>fully enriched (all fields)</strong> — by 31 Aug · owner: Nandita + Chetan</div>
-   <div><span class="k">Assumption</span> enrichment support from Chetan + tooling (LinkedIn premium)</div>
-   <div class="full"><span class="k">How I'll get there</span> fix last-name parsing, enrich title / LinkedIn / revenue / category, map 2+ contacts per account, tier by value &amp; fit — so outreach reaches the right buyer.</div>
-  </div>
- </div>
-
- <div class="commit"><div class="top"><div class="cn">3</div><div class="ttl">Make marketing provable (close the tracking gap)</div></div>
-  <div class="body">
-   <div><span class="k">Done when</span> attribution + activation→SQL tracking live — by 31 Jul · owner: Nandita + Fahad/Adrian</div>
-   <div><span class="k">Assumption</span> source/attribution definition agreed in next week's review</div>
-   <div class="full"><span class="k">How I'll get there</span> agree a simple marketing-sourced/influenced definition, log every Hot hand-off with activity + asset from day one, stand up one live dashboard.</div>
-  </div>
- </div>
-
- <h3>What could block this plan</h3>
- <ul>
-   <li><strong>Sales doesn't work hand-offs in time</strong> → 24h SLA + Pranav escalates unexplained delays.</li>
-   <li><strong>Enrichment slips</strong> → enrich Top 50 first; confirm Chetan's capacity up front; July checkpoint.</li>
-   <li><strong>Attribution stays messy</strong> → lock the definition next week; log from day one.</li>
-   <li><strong>Late start eats the ~4–6 wk lead time</strong> → calendar front-loads Jul–Aug; past mid-Sep counts toward Q4.</li>
- </ul>
- <p class="note">If we're below ~50% of pace by mid-August, we reallocate to whatever's converting and flag it early — not in September.</p>
-</section>
-
-<!-- 3b activities -->
-<section id="s3b">
- <div class="sec-h"><div class="sec-n">▸</div><h2>The action plan — what we actually do, by tier</h2></div>
- <p class="note">Three activities run the quarter — <strong>Events</strong>, <strong>ABM + interactive/game campaigns</strong>, and <strong>Inbound</strong> — aimed differently by tier. Webinar + research is a shared awareness feeder; founder LinkedIn is optional.</p>
-
- <div class="tier">
-   <div class="tier-h"><span class="badge t1">Top 50</span> Highest value / revenue — land big, high-touch</div>
-   <ul>
-    <li><b>Events / roundtables</b> — intimate, founder-led, retail-CXO rooms; the main SQL driver for this tier.</li>
-    <li><b>Highly personalised ABM</b> — 1:1 sequences, buying-committee mapped (2+ contacts), tailored to each account's context.</li>
-    <li><b>Gifting</b> — personalised, triggered when an account goes "Hot" (12 gifts · ₹3,000 each).</li>
-    <li><b>Webinar + case studies</b> — used as warm, credibility touches.</li>
-   </ul>
- </div>
-
- <div class="tier">
-   <div class="tier-h"><span class="badge t2">Next 200</span> Closest ICP fit — highest propensity, semi-personalised at scale</div>
-   <ul>
-    <li><b>Segmented ABM</b> — by category / job-title / department (targeted clusters, not 1:1).</li>
-    <li><b>Interactive / game campaigns</b> — Squid Games-style; our best-converting creative.</li>
-    <li><b>Blanket gifting</b> — non-personalised, where it makes sense.</li>
-    <li><b>Event invites</b> — 2nd priority, once Top 50 is worked and the target isn't yet met.</li>
-    <li><b>Webinar + case studies</b> — core awareness + capture.</li>
-   </ul>
- </div>
-
- <div class="tier">
-   <div class="tier-h"><span class="badge t3">Rest</span> Long tail — scaled, low-touch, no paid</div>
-   <ul>
-    <li><b>Interactive content + webinar</b> — broad awareness; accounts self-qualify in.</li>
-    <li><b>Inbound</b> — website forms, gated case studies, ROI calculator (runs across all tiers; highest quality per touch).</li>
-   </ul>
+<section>
+ <div class="sec-h"><div class="sec-n">3</div><h2>Current challenges — what's keeping me up at night</h2></div>
+ <div class="cards3">
+   <div class="mini"><div class="t">1 · Data + tracking gap</div><div class="d">Revenue exists on only ~<strong>15%</strong> of accounts in Clarify — so true target marketing isn't possible yet. And we can't measure the time from engagement → SQL, or attribute it. Needs enrichment + a real attribution model (already discussed with Fahad &amp; Adrian).</div></div>
+   <div class="mini"><div class="t">2 · Visibility + accountability</div><div class="d">Across <strong>marketing → sales → CS</strong> there's no shared view of what's handed off, whether it's actioned, and what happens next — and ownership is unclear. We need one visible board and a clear line of accountability.</div></div>
+   <div class="mini"><div class="t">3 · Budget</div><div class="d">Spend decisions have been made without marketing in the loop. I've itemised exactly what's needed and tied every rupee to the plan (see the ask at the end).</div></div>
  </div>
 </section>
 
 <!-- 4 -->
-<section id="s4">
- <div class="sec-h"><div class="sec-n">4</div><h2>What I need from the group</h2></div>
+<section>
+ <div class="sec-h"><div class="sec-n">4</div><h2>The plan</h2></div>
+
+ <h3>Setup &amp; prerequisites (these must be true first)</h3>
+ <div class="prereq">
+  <div class="pr"><strong>Clean, tiered, usable list</strong> — Enterprise / Large / Mid, enriched (especially revenue, today only ~15%).</div>
+  <div class="pr"><strong>Tracking + attribution live</strong> — engagement→SQL time + source, agreed with Fahad / Adrian.</div>
+  <div class="pr"><strong>MQL verification</strong> — I verify and refine leads before hand-off, so sales gets a tighter, higher-quality list.</div>
+  <div class="pr"><strong>2-working-day sales SLA</strong> + an escalation board everyone can see.</div>
+ </div>
+
+ <h3>Who we're targeting (tiers)</h3>
+ <p class="note"><span class="badge b-ent">Enterprise</span> Top 50 — highest revenue/value · <span class="badge b-lrg">Large</span> Next 200 — best ICP fit · <span class="badge b-mid">Mid</span> the rest — scaled, low-touch.</p>
+
+ <h3>The activities</h3>
+
+ <div class="act"><div class="top"><div class="cn">1</div><div class="ttl">Webinars + Events — thought leadership, not product</div></div>
+  <div class="body">
+   <p><strong>Webinar (all tiers):</strong> purely <strong>topical</strong>, with industry + customer speakers — a thought-leadership and community play, <em>not</em> a product showcase. This drives more pipeline than a demo webinar, because it earns trust first.</p>
+   <p><strong>Events (Enterprise):</strong> same ethos — a dinner + a topical panel / roundtable, with a customer and ~10 enterprise decision-makers in the room. <strong>3 this quarter: Mumbai, Dubai, Delhi.</strong></p>
+   <p class="note"><strong>Assumed result: ~4 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">2</div><div class="ttl">Multichannel outreach</div></div>
+  <div class="body">
+   <p><span class="badge b-lrg">Large</span> <strong>Filter-level ABM</strong> — segmented by job title, department, industry and geo.</p>
+   <p><span class="badge b-mid">Mid</span> <strong>Interactive content</strong> — case studies + games, run at scale.</p>
+   <p class="note"><strong>Assumed result: ~4 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">3</div><div class="ttl">Gifting</div></div>
+  <div class="body">
+   <p><span class="badge b-ent">Enterprise</span> personalised gifting, <strong>12 accounts this quarter</strong> (triggered when an account goes "Hot").</p>
+   <p class="note"><strong>Assumed result: enabler — lifts the Enterprise ABM / events conversion (~1 assist).</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">4</div><div class="ttl">Inbound — tracking + a wider net</div></div>
+  <div class="body">
+   <p>Enable <strong>source tracking</strong> (which leads come from Google vs LinkedIn), then widen the net with <strong>low-effort</strong> levers: SEO, AEO, LinkedIn posts, backlinking — doubling down only where leads are already coming from.</p>
+   <p class="note"><strong>Assumed result: ~2 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <table>
+  <tr><th>Activity</th><th>Tier</th><th>Assumed SQLs</th></tr>
+  <tr><td>Webinars + Events</td><td>All / Enterprise</td><td>~4</td></tr>
+  <tr><td>Multichannel outreach (ABM + interactive)</td><td>Large + Mid</td><td>~4</td></tr>
+  <tr><td>Inbound</td><td>All</td><td>~2</td></tr>
+  <tr><td>Gifting</td><td>Enterprise</td><td>enabler</td></tr>
+  <tr><td><b>Total</b></td><td></td><td><b>10</b></td></tr>
+ </table>
+ <p class="note">The whole principle: double down on what has produced SQLs; cut anything that has brought zero results.</p>
+</section>
+
+<!-- 5 CTA -->
+<section>
+ <div class="sec-h"><div class="sec-n">5</div><h2>To make this successful — collaboration + approvals</h2></div>
+
+ <h3>Collaboration I need</h3>
  <table>
   <tr><th>Type</th><th>What / who</th><th>By when</th></tr>
-  <tr><td><span class="pill dep">Dependency</span></td><td><strong>Sales / AEs</strong> — own &amp; action every Hot lead within 24h, update status; honest source tagging</td><td>24h / lead</td></tr>
-  <tr><td><span class="pill dep">Dependency</span></td><td><strong>Data (Chetan)</strong> — Top 50 + Next 200 <strong>fully enriched (all fields)</strong></td><td>by 31 Aug</td></tr>
-  <tr><td><span class="pill dep">Dependency</span></td><td><strong>CS (Vinay)</strong> — case studies + customer reviews</td><td>1 / 2 weeks</td></tr>
-  <tr><td><span class="pill dec">Leadership</span></td><td><strong>Budget sign-off (~₹1.5–2L)</strong> — Pranav</td><td>this review</td></tr>
-  <tr><td><span class="pill dec">Leadership</span></td><td><strong>Attribution model / source definition</strong> — Fahad / Adrian (+ Pranav)</td><td>next week</td></tr>
-  <tr><td><span class="pill con">Tradeoff</span></td><td>Sales time on marketing hand-offs vs. own outbound — agree it's prioritised, not optional</td><td>this review</td></tr>
-  <tr><td><span class="pill con">Tradeoff</span></td><td>Replace the daily sync with one weekly outcome review — so I'm executing, not on status calls</td><td>this review</td></tr>
+  <tr><td><span class="pill dep">Sales</span></td><td>Action every passed lead (email / phone) within <strong>2 working days</strong>; tag source honestly; keep the board updated</td><td>per lead</td></tr>
+  <tr><td><span class="pill dep">Data (Chetan)</span></td><td>Enterprise + Large <strong>fully enriched</strong> (esp. revenue)</td><td>by 31 Aug</td></tr>
+  <tr><td><span class="pill dep">CS (Vinay)</span></td><td>Case studies + customer reviews / speakers for events &amp; webinars</td><td>1 / 2 weeks</td></tr>
  </table>
-</section>
 
-<!-- 5 -->
-<section id="s5">
- <div class="sec-h"><div class="sec-n">5</div><h2>The conversation we need to have</h2></div>
- <p><strong>The question:</strong> To hit an aggressive target, what's the cleanest way for marketing to operate and stay aligned with sales and leadership? Here's what I'd propose — happy to align on it together.</p>
- <div class="q-opts">
-   <div class="opt"><div class="h">A — Current setup</div>Direction and check-ins come from a few people. Works, but it splits focus across multiple priorities.</div>
-   <div class="opt rec"><div class="h">B — Single line + weekly outcomes <span class="star">★ Proposed</span></div>One manager (Fahad) owns my priorities; one weekly outcome review; marketing decisions made with me in the loop.</div>
-   <div class="opt"><div class="h">C — Hybrid</div>Single line + weekly review, plus an escalation board for cross-team asks.</div>
+ <h3>Approvals only leadership can give</h3>
+ <table>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Attribution model / source definition</strong> — Fahad / Adrian (+ Pranav)</td><td>next week</td></tr>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Visibility + accountability</strong> — one weekly outcome review across marketing / sales / CS, one shared board, one clear line of alignment</td><td>this review</td></tr>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Budget sign-off</strong> — itemised below</td><td>this review</td></tr>
+ </table>
+
+ <div class="cta">
+  <h3 style="margin-top:0">The budget ask — ~₹2L, every rupee tied to the plan</h3>
+  <table>
+   <tr><th>Item</th><th>Q3 spend</th><th>Basis</th></tr>
+   <tr><td>Events (3 × ~10 enterprise decision-makers — Mumbai, Dubai, Delhi)</td><td>₹1,50,000</td><td>₹5,000 / head × 10 × 3</td></tr>
+   <tr><td>Gifting (Enterprise, 12 accounts)</td><td>₹36,000</td><td>12 × ₹3,000</td></tr>
+   <tr><td>Webinar + content / creative</td><td>₹0–25,000</td><td>mostly existing tools + speakers</td></tr>
+   <tr><td>Inbound (SEO / AEO / LinkedIn / backlinks)</td><td>low / ₹0</td><td>low-effort, organic</td></tr>
+   <tr><td><b>Total</b></td><td><b>~₹2L</b></td><td></td></tr>
+  </table>
+  <p class="note">Guardrail: every paid activity gets a 2-week go/no-go — if it isn't producing meetings, we stop. Most of the 10 SQLs come from near-zero-cost channels; the real ask is <strong>sales follow-through and shared accountability</strong>, not spend.</p>
  </div>
- <div class="recbox"><strong>My recommendation: B (open to C).</strong> A single owner and one weekly outcome review give full visibility with less overhead, and free me to spend the time executing and pushing across sales and product. It's not about less accountability — it's a clearer line so the 10 is easy to drive and easy to track.</div>
 </section>
 
-<!-- DETAIL -->
-<section id="detail">
+<!-- detail -->
+<section>
  <div class="sec-h"><div class="sec-n">+</div><h2>Detail &amp; backup <span class="note" style="font-weight:400">— open what you want</span></h2></div>
  <div class="tabs">
-   <button class="on" data-t="cal">📅 Q3 calendar</button>
-   <button data-t="math">🎯 Target math</button>
+   <button class="on" data-t="cal">📅 Calendar</button>
    <button data-t="works">🏆 What works &amp; competitors</button>
-   <button data-t="qual">⚡ Qualification</button>
-   <button data-t="sig">🔗 Signal Touch</button>
-   <button data-t="bud">💰 Budget detail</button>
+   <button data-t="data">📊 Data detail</button>
  </div>
-
  <div class="panel on" id="cal">
    <div class="phasebar"><div class="phase p1">July — Activate</div><div class="phase p2">August — Activate + Convert</div><div class="phase p3">September — Convert</div></div>
-   <p class="note">Front-loaded (≈4–6 wk lead time): anything started after mid-September counts toward Q4.</p>
-   <table>
-    <tr><th>Week</th><th>Events</th><th>ABM + Game</th><th>Inbound + Case studies</th><th>Research + Webinar</th><th>Ops</th></tr>
-    <tr><td><b>Jul W1</b></td><td>Lock event format</td><td>Enrich Top 50</td><td>Case study #1; ROI calc</td><td>Scope research</td><td>Dashboard + tracking ON</td></tr>
-    <tr><td><b>Jul W2</b></td><td>Build invite list</td><td>ABM wave 1 → Top 50</td><td>Gated case study</td><td>Field survey</td><td>List clean-up</td></tr>
-    <tr><td><b>Jul W3</b></td><td>—</td><td>Game campaign #1</td><td>Inbound nurture</td><td>—</td><td>Enrich Next 200</td></tr>
-    <tr><td><b>Jul W4</b></td><td>Confirm speakers</td><td>ABM review</td><td>Case study #2</td><td>Research data in</td><td>Ratio check</td></tr>
-    <tr><td><b>Aug W1</b></td><td><b>Roundtable #1</b></td><td>ABM → Next 200</td><td>Follow-up assets</td><td>Webinar invites</td><td>Gifting (Hot Top 50)</td></tr>
-    <tr><td><b>Aug W2</b></td><td>Follow-up mtgs</td><td>Game campaign #2</td><td>Case study #3</td><td>Reminders</td><td>Scoring</td></tr>
-    <tr><td><b>Aug W3</b></td><td>—</td><td>ABM wave 2</td><td>Inbound nurture</td><td><b>Webinar (live)</b> + research</td><td>Data checkpoint</td></tr>
-    <tr><td><b>Aug W4</b></td><td>Plan event #2</td><td>Webinar → SQL f/up</td><td>Case study #4</td><td>Replay nurture</td><td><b>Spend go/no-go</b></td></tr>
-    <tr><td><b>Sep W1</b></td><td><b>Event #2</b> (if on track)</td><td>Game campaign #3</td><td>Proof refresh</td><td>Post-webinar seq</td><td>Pipeline review</td></tr>
-    <tr><td><b>Sep W2</b></td><td>Follow-up mtgs</td><td>Close gaps</td><td>Inbound → meetings</td><td>—</td><td>Mid-qtr review</td></tr>
-    <tr><td><b>Sep W3</b></td><td>2nd-priority → Next 200</td><td>Push → SQLs</td><td>Close support</td><td>—</td><td>Attribution clean-up</td></tr>
-    <tr><td><b>Sep W4</b></td><td>—</td><td>Final SQL push</td><td>—</td><td>Plan Q4 / launch</td><td><b>Q3 results vs 10</b></td></tr>
-   </table>
+   <p class="note">Front-loaded (≈4–6 wk activation→SQL lead time): anything started after mid-September counts toward Q4. Full week-by-week view on the <a href="/Xeno/Q3plan/calendar/">Calendar page</a>.</p>
  </div>
-
- <div class="panel" id="math">
-   <p class="note">10 SQLs, built bottom-up from each channel's real conversion rate.</p>
-   <table>
-    <tr><th>Activity</th><th>Tier</th><th>Conv.</th><th>SQLs</th><th>Qualified engagements</th></tr>
-    <tr><td>ABM + Game/interactive</td><td>Top 50 + 200</td><td>~12:1</td><td>4</td><td>~48</td></tr>
-    <tr><td>Events</td><td>Top 50</td><td>~7:1</td><td>3</td><td>~21</td></tr>
-    <tr><td>Inbound</td><td>All</td><td>~5:1</td><td>2</td><td>~10</td></tr>
-    <tr><td>Webinar</td><td>Rest (feeder)</td><td>~30:1</td><td>1</td><td>~30</td></tr>
-    <tr><td><b>Total</b></td><td></td><td><b>~11:1</b></td><td><b>10</b></td><td><b>~110</b></td></tr>
-   </table>
-   <p class="note"><strong>Tiering:</strong> Top 50 = highest value/revenue · Next 200 = closest ICP fit · Rest = scaled, low-touch. Real targetable universe: 277 India + GCC ICP accounts.</p>
- </div>
-
  <div class="panel" id="works">
-   <h3>What the year proves works (so we do only this)</h3>
-   <table>
-    <tr><th>Channel</th><th>Eng → SQLs</th><th>Conv.</th><th>Role</th></tr>
-    <tr><td>Inbound (website/gated)</td><td>14 → 3</td><td>~5:1</td><td>Best quality</td></tr>
-    <tr><td>Events (ReInvent-style)</td><td>14 → 2</td><td>~7:1</td><td>High-intent, Top 50</td></tr>
-    <tr><td>ABM + game/interactive</td><td>140 → ~6</td><td>~16:1</td><td>The workhorse</td></tr>
-    <tr><td>Webinar</td><td>69 → 2</td><td>~35:1</td><td>Awareness feeder</td></tr>
-   </table>
-   <h3>How we compete</h3>
    <ul>
-    <li><strong>Capillary</strong> — enterprise-loyalty heavyweight (analyst badges, scale, acquisitions, big events). We won't out-spend it.</li>
-    <li><strong>MoEngage / CleverTap</strong> — app-first engagement; win on benchmark reports, branded communities/events, case studies, AI-agent narrative.</li>
-    <li><strong>Where Xeno wins</strong> — purpose-built for retail (POS/loyalty-connected, India + GCC), proven incremental revenue (Taco Bell +69%, Bestseller +40%, 60x ROI), autonomous decisioning.</li>
-    <li>We copy what works for challengers — retail research, case studies, intimate events, sharp POV — and skip what we can't fund.</li>
-   </ul>
-   <p class="note">Webinar runs <strong>thought-leadership-led, not product-led</strong>. Founder-led LinkedIn kept <strong>optional / aspirational</strong>.</p>
- </div>
-
- <div class="panel" id="qual">
-   <h3>Quality leads over mass — qualify before the hand-off</h3>
-   <p class="note">An engagement becomes an MQL only if it clears two gates: <strong>Fit</strong> (Top 50/200 + a real buyer/influencer, not HR/junior) and <strong>Intent</strong> (demo/pricing/form, repeat, event/webinar attend, completed game).</p>
-   <table>
-    <tr><th></th><th>High intent</th><th>Low intent</th></tr>
-    <tr><td><b>High fit</b> (Top 50/200)</td><td><b>🔥 Hot</b> → sales in 24h, book meeting</td><td><b>Warm</b> → tight ABM + event invite</td></tr>
-    <tr><td><b>Low fit</b> (rest)</td><td><b>Watch</b> → light nurture; enrich</td><td><b>Drop / suppress</b></td></tr>
-   </table>
-   <p class="note">Every <strong>Hot</strong> lead is handed to a <strong>named owner</strong>, actioned within <strong>24 hours</strong>, and its status updated back — fewer, higher-quality leads, and nothing goes cold.</p>
- </div>
-
- <div class="panel" id="sig">
-   <h3>Alignment with Signal Touch (org plan)</h3>
-   <p class="note">Signal Touch launches mid-October. This Q3 plan is its <strong>foundation quarter</strong> — built so nothing is wasted.</p>
-   <ul>
-    <li><strong>Tiers nest:</strong> our Top 50 = their top-50 high-touch · Next 200 ⊂ their top-500 outbound · Rest ⊂ their 1,500 awareness universe.</li>
-    <li><strong>Do once, use twice:</strong> the research, case studies, enriched lists, and LinkedIn/WhatsApp setup we build now are exactly what the launch needs in October.</li>
-    <li><strong>Hand-off:</strong> Q3's 10 SQLs + a warmed, enriched list feed the launch's 100-meeting goal.</li>
-    <li><strong>Boundary:</strong> we build the engine; we don't execute the launch here.</li>
+    <li><strong>Capillary</strong> — enterprise-loyalty heavyweight (analyst badges, scale). We don't out-spend it.</li>
+    <li><strong>MoEngage / CleverTap</strong> — app-first; win on benchmark reports, branded events/communities, case studies, AI-agent narrative.</li>
+    <li><strong>Where Xeno wins</strong> — purpose-built for retail (India + GCC), proven incremental revenue (Taco Bell +69%, Bestseller +40%), autonomous decisioning.</li>
+    <li>So we copy what works for challengers — topical research, named case studies, intimate events — and skip what we can't fund.</li>
    </ul>
  </div>
-
- <div class="panel" id="bud">
-   <h3>Budget — lean and itemised (~₹1.5–2L)</h3>
+ <div class="panel" id="data">
    <table>
-    <tr><th>Item</th><th>Q3 spend</th><th>Basis</th></tr>
-    <tr><td>Events / roundtables (2 × ~10, Top 50)</td><td>₹1,00,000</td><td>₹5,000 × 10 × 2</td></tr>
-    <tr><td>Gifting (Top 50, triggered on "Hot")</td><td>₹36,000</td><td>12 × ₹3,000</td></tr>
-    <tr><td>Retail research + creative</td><td>₹0–50,000</td><td>mostly in-house; doubles as launch research</td></tr>
-    <tr><td>LinkedIn ABM / paid test (optional)</td><td>₹0–50,000</td><td>small, kill-switch</td></tr>
-    <tr><td><b>Total</b></td><td><b>~₹1.5–2L</b></td><td></td></tr>
+    <tr><th>Field fill</th><th>Clarify</th><th>HubSpot</th></tr>
+    <tr><td>Email</td><td>80%</td><td>~100%</td></tr>
+    <tr><td>First / Last name</td><td>99% / 19%</td><td>— / 49%</td></tr>
+    <tr><td>Job title</td><td>48%</td><td>29%</td></tr>
+    <tr><td>Company revenue / category</td><td>15% / 14%</td><td>—</td></tr>
    </table>
-   <p class="note">At this budget, the 10 SQLs come mostly from near-zero-cost channels + sales follow-up. The real ask isn't money — it's <strong>sales alignment and the 24h hand-off</strong>. Guardrail: every paid activity gets a 2-week go/no-go; not producing meetings → stop.</p>
+   <p class="note">Only ~6% of records meet a full minimum standard — which is why enrichment is a prerequisite, not a nice-to-have.</p>
  </div>
 </section>
 
-<div class="foot">Working document · Nandita Khanna · Q3 2026 — tabs above hold the supporting detail</div>
+<div class="foot">Working document · Nandita Khanna · Q3 2026</div>
 </div>
-
 <script>
-// tabs
-document.querySelectorAll('.tabs button').forEach(b=>{
- b.addEventListener('click',()=>{
-  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
-  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on'); document.getElementById(b.dataset.t).classList.add('on');
- });
-});
-// reveal on scroll
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
-document.querySelectorAll('section').forEach(s=>io.observe(s));
-// count up
-function countUp(el){const t=+el.dataset.c;let s=0;const step=Math.max(1,Math.ceil(t/40));const id=setInterval(()=>{s+=step;if(s>=t){s=t;clearInterval(id);}el.textContent=s;},22);}
-const io2=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){countUp(e.target);io2.unobserve(e.target);}})},{threshold:.5});
-document.querySelectorAll('[data-c]').forEach(el=>io2.observe(el));
-// active nav
-const navlinks=[...document.querySelectorAll('.nav a')];
-const secs=navlinks.map(a=>document.querySelector(a.getAttribute('href')));
-window.addEventListener('scroll',()=>{
- let i=secs.length-1;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<120)i=k;}
- navlinks.forEach(a=>a.classList.remove('active'));if(navlinks[i])navlinks[i].classList.add('active');
-});
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+ b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
+}));
 </script>
 </body></html>
