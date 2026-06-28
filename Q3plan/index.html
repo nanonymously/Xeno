@@ -54,6 +54,15 @@ ul{margin:8px 0;padding-left:20px}li{margin:6px 0}
 .act .ttl{font-weight:700;font-size:15px}.act .body{padding:14px 20px;font-size:13.8px}
 .badge{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-right:5px}
 .b-ent{background:var(--blue)}.b-lrg{background:#5a8de0}.b-mid{background:#9fb3cf}
+.tiergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0 4px}
+.tcard{border:1px solid var(--line);border-radius:16px;padding:0 0 12px;overflow:hidden;box-shadow:var(--shadow-s);background:linear-gradient(180deg,#fff,#f7faff)}
+.tcard .th{padding:14px 16px 4px;font-weight:800;font-size:15px}
+.tcard .td{padding:0 16px 4px;font-size:12.5px;color:var(--muted)}
+.tcard ul{margin:6px 0 0;padding-left:30px}.tcard li{font-size:13px;margin:4px 0}
+.tcard.ent{border-top:4px solid var(--blue)}.tcard.lrg{border-top:4px solid #5a8de0}.tcard.mid{border-top:4px solid #9fb3cf}
+.sumbox{background:linear-gradient(125deg,#16233c,#1d3a6e 60%,#2b4fb0);color:#fff;border-radius:20px;padding:28px 32px;margin:20px 0;box-shadow:0 18px 40px -18px rgba(24,46,98,.5)}
+.sumbox h2{color:#fff}.sumbox .sec-n{background:rgba(255,255,255,.16)}
+.sumbox ul{padding-left:20px}.sumbox li{margin:7px 0;font-size:14.5px}.sumbox strong{color:#bcd4ff}
 table{border-collapse:separate;border-spacing:0;width:100%;margin:12px 0;font-size:13.4px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 th{background:var(--grad);color:#fff;text-align:left;padding:10px 12px;font-weight:600}
 td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f7faff}
@@ -69,7 +78,7 @@ td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:la
 .phasebar{display:flex;gap:8px;margin:4px 0 12px}.phase{flex:1;text-align:center;font-size:12px;font-weight:700;padding:9px;border-radius:11px}
 .p1{background:#eef4ff;color:var(--blue-d)}.p2{background:#fff4df;color:var(--amber)}.p3{background:#e8f7ef;color:var(--green)}
 .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:28px}
-@media(max-width:760px){.tiles,.cards3,.prereq{grid-template-columns:1fr}h1{font-size:40px}}
+@media(max-width:760px){.tiles,.cards3,.prereq,.tiergrid{grid-template-columns:1fr}h1{font-size:40px}}
 </style></head>
 <body>
 <div class="topbar"><span>Xeno Q3 — one source of truth:</span>
@@ -89,9 +98,9 @@ td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:la
 <div class="wrap">
 <div class="tiles">
  <div class="tile"><div class="n">10</div><div class="l">Q3 SQL target — all in</div></div>
- <div class="tile"><div class="n">4 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
+ <div class="tile"><div class="n">5 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
  <div class="tile"><div class="n">50 · 200 · rest</div><div class="l">Enterprise · Large · Mid</div></div>
- <div class="tile"><div class="n">~₹2L</div><div class="l">Q3 budget ask</div></div>
+ <div class="tile"><div class="n">~₹1.9L</div><div class="l">Q3 budget ask</div></div>
 </div>
 
 <!-- 1 -->
@@ -110,9 +119,9 @@ td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:la
  <div class="funnel">
    <div class="step"><div class="big">82</div><div class="lab">Relevant engagements</div></div>
    <div class="chev">→</div>
-   <div class="step win"><div class="big">4</div><div class="lab">SQLs · target 7</div></div>
+   <div class="step win"><div class="big">5</div><div class="lab">SQLs · target 7</div></div>
  </div>
- <div class="callout">The 82 → 4 drop isn't all failure: some engagements became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
+ <div class="callout">The 82 → 5 drop isn't all failure: some engagements became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
 
  <h3>What's actually working (so we double down)</h3>
  <ul>
@@ -159,8 +168,25 @@ td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:la
   <div class="pr"><strong>2-working-day sales SLA</strong> + an escalation board everyone can see.</div>
  </div>
 
- <h3>Who we're targeting (tiers)</h3>
- <p class="note"><span class="badge b-ent">Enterprise</span> Top 50 — highest revenue/value · <span class="badge b-lrg">Large</span> Next 200 — best ICP fit · <span class="badge b-mid">Mid</span> the rest — scaled, low-touch.</p>
+ <h3>Who we're targeting — and how, by tier</h3>
+ <div class="tiergrid">
+   <div class="tcard ent">
+     <div class="th"><span class="badge b-ent">Enterprise</span> Top 50</div>
+     <div class="td">Highest revenue / value · high-touch</div>
+     <ul><li>Hyper-personalised ABM emails</li><li>Gifting</li><li>Events (dinners / roundtables)</li><li>Webinar</li></ul>
+   </div>
+   <div class="tcard lrg">
+     <div class="th"><span class="badge b-lrg">Large</span> Next 200</div>
+     <div class="td">Best ICP fit · semi-personalised</div>
+     <ul><li>Multichannel outreach (filter ABM — title / dept / industry / geo)</li><li>Webinar</li></ul>
+   </div>
+   <div class="tcard mid">
+     <div class="th"><span class="badge b-mid">Mid</span> The rest</div>
+     <div class="td">Scaled · low-touch</div>
+     <ul><li>Interactive content (case studies + games)</li><li>Webinar</li></ul>
+   </div>
+ </div>
+ <p class="note"><strong>Webinar</strong> and <strong>inbound</strong> run across <strong>all tiers</strong>.</p>
 
  <h3>The activities</h3>
 
@@ -224,16 +250,28 @@ td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:la
  </table>
 
  <div class="cta">
-  <h3 style="margin-top:0">The budget ask — ~₹2L, every rupee tied to the plan</h3>
+  <h3 style="margin-top:0">The budget ask — ~₹1.9L, every rupee tied to the plan</h3>
   <table>
    <tr><th>Item</th><th>Q3 spend</th><th>Basis</th></tr>
    <tr><td>Events (3 × ~10 enterprise decision-makers — Mumbai, Dubai, Delhi)</td><td>₹1,50,000</td><td>₹5,000 / head × 10 × 3</td></tr>
    <tr><td>Gifting (Enterprise, 12 accounts)</td><td>₹36,000</td><td>12 × ₹3,000</td></tr>
    <tr><td>Inbound (SEO / AEO / LinkedIn / backlinks)</td><td>low / ₹0</td><td>low-effort, organic</td></tr>
-   <tr><td><b>Total</b></td><td><b>~₹2L</b></td><td></td></tr>
+   <tr><td><b>Total</b></td><td><b>₹1,86,000</b></td><td></td></tr>
   </table>
   <p class="note">Guardrail: every paid activity gets a 2-week go/no-go — if it isn't producing meetings, we stop. Most of the 10 SQLs come from near-zero-cost channels; the real ask is <strong>sales follow-through and shared accountability</strong>, not spend.</p>
  </div>
+</section>
+
+<!-- summary -->
+<section class="sumbox">
+ <div class="sec-h"><div class="sec-n">✓</div><h2>To sum up</h2></div>
+ <ul>
+  <li>A year ago the marketing engine <strong>didn't exist</strong> — no domain, no HubSpot, no infra. It now <strong>runs</strong>; it needs momentum and polish, not rebuilding.</li>
+  <li>Q3 is about <strong>conversion, not volume</strong> — a focused Enterprise / Large / Mid list, and only the activities that have produced SQLs.</li>
+  <li>The bet: <strong>10 SQLs</strong>, all in — via events &amp; webinars, multichannel outreach, gifting and inbound, on a clean, tracked, enriched list.</li>
+  <li>To win, I need three things from the room: <strong>sales follow-through (2-day SLA) + shared visibility/accountability</strong>, <strong>data + attribution sign-off</strong>, and a lean <strong>~₹1.9L budget</strong>.</li>
+  <li>The principle, simply: <strong>double down on what worked, eliminate what didn't, and prove every number.</strong></li>
+ </ul>
 </section>
 
 <!-- detail -->
