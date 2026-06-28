@@ -2,59 +2,74 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Q3 Marketing Plan — Quarterly Leader Brief</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#1F73FF;--blue-d:#1559c4;--ink:#16233c;--muted:#6b7a93;--line:#e7edf6;--bg:#f4f7fc;--soft:#eef4ff;--soft2:#f6f9ff;--green:#1f9d6b;--amber:#c8870f;--red:#cf3a2c;--shadow:0 6px 22px rgba(28,52,99,.07);}
+:root{
+ --blue:#1F73FF;--blue-d:#1559c4;--indigo:#6a5cff;--ink:#141f33;--muted:#6b7a93;
+ --line:#e7edf6;--bg:#eef2f9;--soft:#eef4ff;--soft2:#f7faff;--green:#1f9d6b;--amber:#c8870f;--red:#cf3a2c;
+ --shadow:0 12px 34px -16px rgba(24,46,98,.22);--shadow-s:0 4px 14px -6px rgba(24,46,98,.16);
+ --grad:linear-gradient(120deg,#1F73FF,#6a5cff);
+}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
-.topbar{background:#16233c;color:#fff;padding:10px 22px;display:flex;gap:20px;align-items:center;font:600 13px/1 Poppins,sans-serif;flex-wrap:wrap}
-.topbar span{opacity:.85}.topbar a{color:#9fd0ff;text-decoration:none}.topbar a:hover{color:#fff}
-.wrap{max-width:1000px;margin:0 auto;padding:0 22px 90px}
-.hero{background:radial-gradient(1100px 360px at 12% -10%,#e3eeff 0%,rgba(227,238,255,0) 60%);padding:40px 0 6px}
-.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-size:11px;font-weight:600;letter-spacing:.07em;padding:6px 13px;border-radius:30px;text-transform:uppercase}
-h1{font-size:36px;font-weight:800;margin:14px 0 4px;letter-spacing:-.02em}
+body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);margin:0;line-height:1.62;-webkit-font-smoothing:antialiased;
+ background:radial-gradient(900px 500px at 90% -5%,#e7ecff 0,rgba(231,236,255,0) 55%),radial-gradient(900px 500px at -5% 8%,#e3eeff 0,rgba(227,238,255,0) 50%),var(--bg);}
+.topbar{background:linear-gradient(90deg,#101a2e,#16233c);color:#fff;padding:11px 22px;display:flex;gap:20px;align-items:center;font:600 13px/1 Poppins,sans-serif;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,0,0,.12)}
+.topbar span{opacity:.8}.topbar a{color:#9fd0ff;text-decoration:none;transition:.15s}.topbar a:hover{color:#fff}
+.wrap{max-width:1010px;margin:0 auto;padding:0 22px 96px}
+.hero{padding:54px 0 8px}
+.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-size:11px;font-weight:700;letter-spacing:.1em;padding:7px 15px;border-radius:30px;text-transform:uppercase;box-shadow:var(--shadow-s)}
+h1{font-size:58px;line-height:1.02;font-weight:900;margin:18px 0 6px;letter-spacing:-.03em;
+ background:linear-gradient(115deg,#16233c 30%,#1F73FF 70%,#6a5cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.subline{font-size:18px;font-weight:700;color:var(--blue-d);margin:2px 0 6px}
 .meta{color:var(--muted);font-size:14px;font-weight:500}
-.oneline{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:16px 20px;margin:20px 0 4px;font-size:15.5px;box-shadow:var(--shadow)}
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 4px}
-.tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
-.tile .n{font-size:24px;font-weight:800;color:var(--blue)}.tile .l{font-size:12px;color:var(--muted);font-weight:500;margin-top:2px}
-section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 30px;margin:18px 0;box-shadow:var(--shadow)}
-.sec-h{display:flex;align-items:center;gap:12px;margin:0 0 14px}
-.sec-n{flex:none;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--blue),#4d92ff);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
-h2{font-size:20px;font-weight:700;margin:0}
-h3{font-size:15px;font-weight:600;margin:18px 0 7px;color:var(--blue-d)}
+.oneline{background:linear-gradient(120deg,#ffffff,#f3f7ff);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:16px;padding:18px 22px;margin:22px 0 4px;font-size:16px;box-shadow:var(--shadow)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:24px 0 4px}
+.tile{background:linear-gradient(165deg,#ffffff,#eef3ff);border:1px solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:var(--shadow);transition:.2s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 20px 40px -18px rgba(24,46,98,.3)}
+.tile .n{font-size:27px;font-weight:900;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tile .l{font-size:12px;color:var(--muted);font-weight:500;margin-top:3px}
+section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 34px;margin:20px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+section::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--grad);opacity:.9}
+.sec-h{display:flex;align-items:center;gap:14px;margin:6px 0 16px}
+.sec-n{flex:none;width:38px;height:38px;border-radius:11px;background:var(--grad);color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px -4px rgba(31,115,255,.5)}
+h2{font-size:25px;font-weight:800;margin:0;letter-spacing:-.02em}
+h3{font-size:15px;font-weight:700;margin:20px 0 8px;color:var(--blue-d)}
 p{margin:9px 0}strong{font-weight:600}.note{color:var(--muted);font-size:13.5px}
-ul{margin:8px 0;padding-left:20px}li{margin:5px 0}
-.funnel{display:flex;align-items:stretch;flex-wrap:wrap;margin:6px 0 8px}
-.step{flex:1;min-width:140px;background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:15px 18px}
-.step .big{font-size:28px;font-weight:800}.step .lab{font-size:12px;color:var(--muted);font-weight:500}.step.win .big{color:var(--blue)}
-.chev{display:flex;align-items:center;justify-content:center;color:#b9c6dc;font-size:20px;padding:0 10px}
-.callout{margin-top:12px;background:#fdecea;border:1px solid #f6cdc7;color:#9e2b20;border-radius:10px;padding:10px 15px;font-size:13px}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.mini{background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.mini .t{font-weight:600;font-size:14.5px;margin-bottom:4px}.mini .d{font-size:13px;color:var(--muted)}
-.act{border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
-.act .top{display:flex;align-items:center;gap:11px;background:var(--soft2);padding:12px 18px;border-bottom:1px solid var(--line)}
-.act .cn{flex:none;width:25px;height:25px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
-.act .ttl{font-weight:600;font-size:15px}.act .body{padding:13px 18px;font-size:13.7px}
-.badge{font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-right:5px}
+ul{margin:8px 0;padding-left:20px}li{margin:6px 0}
+.funnel{display:flex;align-items:stretch;flex-wrap:wrap;gap:0;margin:8px 0}
+.step{flex:1;min-width:160px;background:linear-gradient(165deg,#f7faff,#eaf1ff);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow-s)}
+.step .big{font-size:34px;font-weight:900;color:var(--ink)}.step .lab{font-size:12.5px;color:var(--muted);font-weight:500}
+.step.win{background:linear-gradient(165deg,#e9f0ff,#dfe7ff)}.step.win .big{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chev{display:flex;align-items:center;justify-content:center;color:#9bb0d6;font-size:26px;padding:0 14px}
+.callout{margin-top:14px;background:linear-gradient(120deg,#fff6ee,#fff);border:1px solid #f4d9bf;color:#8a5a18;border-radius:12px;padding:12px 16px;font-size:13.3px}
+.win-banner{margin:14px 0 2px;background:var(--grad);color:#fff;border-radius:14px;padding:14px 20px;font-weight:700;font-size:15px;box-shadow:0 12px 28px -12px rgba(31,115,255,.5)}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.mini{background:linear-gradient(165deg,#f7faff,#eef4ff);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow-s);transition:.2s}
+.mini:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.mini .t{font-weight:700;font-size:14.5px;margin-bottom:5px}.mini .d{font-size:13px;color:var(--muted)}
+.act{border:1px solid var(--line);border-radius:16px;margin:13px 0;overflow:hidden;box-shadow:var(--shadow-s);transition:.2s}
+.act:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.act .top{display:flex;align-items:center;gap:12px;background:linear-gradient(120deg,#eef4ff,#f7faff);padding:13px 20px;border-bottom:1px solid var(--line)}
+.act .cn{flex:none;width:27px;height:27px;border-radius:50%;background:var(--grad);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.act .ttl{font-weight:700;font-size:15px}.act .body{padding:14px 20px;font-size:13.8px}
+.badge{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-right:5px}
 .b-ent{background:var(--blue)}.b-lrg{background:#5a8de0}.b-mid{background:#9fb3cf}
-table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.4px}
-th{background:var(--blue);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
-td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#fafcff}
-.prereq{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:8px 0}
-.pr{background:var(--soft2);border:1px solid var(--line);border-radius:11px;padding:11px 14px;font-size:13.3px}
-.cta{background:linear-gradient(120deg,#eef4ff,#f6f9ff);border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin:18px 0}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:12px 0;font-size:13.4px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{background:var(--grad);color:#fff;text-align:left;padding:10px 12px;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f7faff}
+.prereq{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin:8px 0}
+.pr{background:linear-gradient(165deg,#f7faff,#eef4ff);border:1px solid var(--line);border-radius:12px;padding:12px 15px;font-size:13.3px;box-shadow:var(--shadow-s)}
+.cta{background:linear-gradient(125deg,#e9f0ff,#eef4ff 50%,#f3eeff);border:1px solid #d8e3fb;border-radius:18px;padding:26px 30px;margin:20px 0;box-shadow:var(--shadow)}
 .pill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase}
 .pill.dep{background:#e8f0fe;color:var(--blue-d)}.pill.dec{background:#fff4df;color:var(--amber)}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.tabs button{font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);background:var(--soft2);border:1px solid var(--line);padding:8px 14px;border-radius:30px;cursor:pointer}
-.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.tabs button{font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);background:#f7faff;border:1px solid var(--line);padding:9px 15px;border-radius:30px;cursor:pointer;transition:.15s}
+.tabs button.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px -8px rgba(31,115,255,.5)}
 .panel{display:none}.panel.on{display:block}
-.phasebar{display:flex;gap:8px;margin:4px 0 12px}.phase{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px;border-radius:10px}
+.phasebar{display:flex;gap:8px;margin:4px 0 12px}.phase{flex:1;text-align:center;font-size:12px;font-weight:700;padding:9px;border-radius:11px}
 .p1{background:#eef4ff;color:var(--blue-d)}.p2{background:#fff4df;color:var(--amber)}.p3{background:#e8f7ef;color:var(--green)}
-.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
-@media(max-width:760px){.tiles,.cards3,.prereq{grid-template-columns:1fr}h1{font-size:29px}}
+.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:28px}
+@media(max-width:760px){.tiles,.cards3,.prereq{grid-template-columns:1fr}h1{font-size:40px}}
 </style></head>
 <body>
 <div class="topbar"><span>Xeno Q3 — one source of truth:</span>
@@ -66,6 +81,7 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
 <div class="hero"><div class="wrap" style="padding-bottom:0">
 <span class="tag">Xeno · Marketing · Quarterly Leader Brief</span>
 <h1>Q3 Marketing Plan</h1>
+<div class="subline">Doubling down on what worked. Eliminating what didn't.</div>
 <div class="meta">Nandita Khanna · Q3 2026 (Jul–Sep) · reviewing Q2 (Apr–Jun)</div>
 <div class="oneline"><strong>In one line:</strong> Fix conversion, not volume — work a focused Enterprise + Large list, hand sales fewer but higher-quality leads, and double down only on what has produced SQLs, to drive <strong>10 SQLs in Q3</strong> while pre-building the October launch.</div>
 </div></div>
@@ -73,7 +89,7 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
 <div class="wrap">
 <div class="tiles">
  <div class="tile"><div class="n">10</div><div class="l">Q3 SQL target — all in</div></div>
- <div class="tile"><div class="n">5 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
+ <div class="tile"><div class="n">4 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
  <div class="tile"><div class="n">50 · 200 · rest</div><div class="l">Enterprise · Large · Mid</div></div>
  <div class="tile"><div class="n">~₹2L</div><div class="l">Q3 budget ask</div></div>
 </div>
@@ -88,41 +104,52 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
 <!-- 2 -->
 <section>
  <div class="sec-h"><div class="sec-n">2</div><h2>What we did last year &amp; what worked</h2></div>
- <p><strong>Built the engine from zero.</strong> A year ago there was no domain, no HubSpot, no infrastructure. Since then: full marketing + GTM / demand-gen ops, all email campaigns, LinkedIn + founder brand, 4 webinars/events, 24 demand-gen assets (excl. Shivalika's), client gifting, hyper-personalised ABM, multiple website updates, quarter-on-quarter planning, a hire, and <strong>~2,23,000 emails</strong> sent. Outcome: <strong>14 SQLs and 5 deals won</strong>, marketing-sourced or influenced.</p>
+ <p><strong>Built the engine from zero.</strong> A year ago there was no domain, no HubSpot, no infrastructure. Since then: full marketing + GTM / demand-gen ops, all email campaigns, LinkedIn + founder brand, 4 webinars/events, 24 demand-gen assets (excl. Shivalika's), hyper-personalised ABM, multiple website updates, quarter-on-quarter planning, a hire, and <strong>~2,23,000 emails</strong> sent. Outcome: <strong>14 SQLs and 5 deals won</strong>, marketing-sourced or influenced.</p>
 
  <h3>Q2 funnel</h3>
  <div class="funnel">
    <div class="step"><div class="big">82</div><div class="lab">Relevant engagements</div></div>
    <div class="chev">→</div>
-   <div class="step"><div class="big">4</div><div class="lab">Meetings (logged)</div></div>
-   <div class="chev">→</div>
-   <div class="step win"><div class="big">5 <span style="font-size:15px;color:var(--muted)">/ 7</span></div><div class="lab">SQLs · actual / goal</div></div>
+   <div class="step win"><div class="big">4</div><div class="lab">SQLs · target 7</div></div>
  </div>
- <div class="callout">The 82 → 5 drop isn't all failure. Some became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
+ <div class="callout">The 82 → 4 drop isn't all failure: some engagements became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
 
  <h3>What's actually working (so we double down)</h3>
  <ul>
-  <li><strong>Events &amp; webinars</strong> — our highest-intent, highest-quality source.</li>
+  <li><strong>Webinars</strong> — our highest-intent, highest-quality source.</li>
   <li><strong>Inbound</strong> — best conversion per touch (when we can see where it came from).</li>
   <li><strong>Interactive content</strong> — games + case studies (Squid Games, Loyalty Dilemma) drove our most recent SQLs.</li>
-  <li><strong>Client gifting</strong> — punched above its cost.</li>
+  <li><strong>Client gifting</strong> — <em>planned for Q3 (not run yet)</em>; expected to punch above its cost.</li>
  </ul>
- <p class="note">Note on the numbers: these are marketing-sourced <em>or influenced</em> — cleaning up that attribution is itself a Q3 commitment, not a claim to hide behind.</p>
+ <p class="note"><strong>Note on the numbers:</strong> these are marketing-sourced <em>or influenced</em> — cleaning up that attribution is itself a Q3 commitment, not a claim to hide behind.</p>
 </section>
 
 <!-- 3 -->
 <section>
  <div class="sec-h"><div class="sec-n">3</div><h2>Current challenges — what's keeping me up at night</h2></div>
  <div class="cards3">
-   <div class="mini"><div class="t">1 · Data + tracking gap</div><div class="d">Revenue exists on only ~<strong>15%</strong> of accounts in Clarify — so true target marketing isn't possible yet. And we can't measure the time from engagement → SQL, or attribute it. Needs enrichment + a real attribution model (already discussed with Fahad &amp; Adrian).</div></div>
+   <div class="mini"><div class="t">1 · Data + tracking gap</div><div class="d">Revenue exists on only ~<strong>15%</strong> of accounts in Clarify — so true target marketing isn't possible yet. And we can't measure engagement → SQL time, or attribute it. Needs enrichment + a real attribution model (already discussed with Fahad &amp; Adrian).</div></div>
    <div class="mini"><div class="t">2 · Visibility + accountability</div><div class="d">Across <strong>marketing → sales → CS</strong> there's no shared view of what's handed off, whether it's actioned, and what happens next — and ownership is unclear. We need one visible board and a clear line of accountability.</div></div>
    <div class="mini"><div class="t">3 · Budget</div><div class="d">Spend decisions have been made without marketing in the loop. I've itemised exactly what's needed and tied every rupee to the plan (see the ask at the end).</div></div>
  </div>
+ <h3>Where the data stands today (for reference)</h3>
+ <table>
+   <tr><th>Field fill</th><th>Clarify</th><th>HubSpot</th></tr>
+   <tr><td>Email</td><td>80%</td><td>~100%</td></tr>
+   <tr><td>First / Last name</td><td>99% / 19%</td><td>— / 49%</td></tr>
+   <tr><td>Job title</td><td>48%</td><td>29%</td></tr>
+   <tr><td>LinkedIn</td><td>51%</td><td>—</td></tr>
+   <tr><td>Company (name)</td><td>71%</td><td>93%</td></tr>
+   <tr><td>Company domain / LinkedIn</td><td>99% / 71%</td><td>—</td></tr>
+   <tr><td>Company revenue / category</td><td>15% / 14%</td><td>—</td></tr>
+ </table>
+ <p class="note">Only ~<strong>6%</strong> of records meet a full minimum standard — which is why enrichment is a prerequisite, not a nice-to-have. Clarify holds firmographics; HubSpot holds email + engagement; both are thin on title, LinkedIn, revenue and category.</p>
 </section>
 
 <!-- 4 -->
 <section>
  <div class="sec-h"><div class="sec-n">4</div><h2>The plan</h2></div>
+ <div class="win-banner">Double down on what has produced SQLs · eliminate everything that brought zero results.</div>
 
  <h3>Setup &amp; prerequisites (these must be true first)</h3>
  <div class="prereq">
@@ -175,7 +202,6 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
   <tr><td>Gifting</td><td>Enterprise</td><td>enabler</td></tr>
   <tr><td><b>Total</b></td><td></td><td><b>10</b></td></tr>
  </table>
- <p class="note">The whole principle: double down on what has produced SQLs; cut anything that has brought zero results.</p>
 </section>
 
 <!-- 5 CTA -->
@@ -203,7 +229,6 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
    <tr><th>Item</th><th>Q3 spend</th><th>Basis</th></tr>
    <tr><td>Events (3 × ~10 enterprise decision-makers — Mumbai, Dubai, Delhi)</td><td>₹1,50,000</td><td>₹5,000 / head × 10 × 3</td></tr>
    <tr><td>Gifting (Enterprise, 12 accounts)</td><td>₹36,000</td><td>12 × ₹3,000</td></tr>
-   <tr><td>Webinar + content / creative</td><td>₹0–25,000</td><td>mostly existing tools + speakers</td></tr>
    <tr><td>Inbound (SEO / AEO / LinkedIn / backlinks)</td><td>low / ₹0</td><td>low-effort, organic</td></tr>
    <tr><td><b>Total</b></td><td><b>~₹2L</b></td><td></td></tr>
   </table>
@@ -213,11 +238,10 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
 
 <!-- detail -->
 <section>
- <div class="sec-h"><div class="sec-n">+</div><h2>Detail &amp; backup <span class="note" style="font-weight:400">— open what you want</span></h2></div>
+ <div class="sec-h"><div class="sec-n">+</div><h2>Detail &amp; backup</h2></div>
  <div class="tabs">
    <button class="on" data-t="cal">📅 Calendar</button>
    <button data-t="works">🏆 What works &amp; competitors</button>
-   <button data-t="data">📊 Data detail</button>
  </div>
  <div class="panel on" id="cal">
    <div class="phasebar"><div class="phase p1">July — Activate</div><div class="phase p2">August — Activate + Convert</div><div class="phase p3">September — Convert</div></div>
@@ -230,16 +254,6 @@ td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nt
     <li><strong>Where Xeno wins</strong> — purpose-built for retail (India + GCC), proven incremental revenue (Taco Bell +69%, Bestseller +40%), autonomous decisioning.</li>
     <li>So we copy what works for challengers — topical research, named case studies, intimate events — and skip what we can't fund.</li>
    </ul>
- </div>
- <div class="panel" id="data">
-   <table>
-    <tr><th>Field fill</th><th>Clarify</th><th>HubSpot</th></tr>
-    <tr><td>Email</td><td>80%</td><td>~100%</td></tr>
-    <tr><td>First / Last name</td><td>99% / 19%</td><td>— / 49%</td></tr>
-    <tr><td>Job title</td><td>48%</td><td>29%</td></tr>
-    <tr><td>Company revenue / category</td><td>15% / 14%</td><td>—</td></tr>
-   </table>
-   <p class="note">Only ~6% of records meet a full minimum standard — which is why enrichment is a prerequisite, not a nice-to-have.</p>
  </div>
 </section>
 
