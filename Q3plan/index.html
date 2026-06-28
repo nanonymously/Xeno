@@ -1,579 +1,255 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Q3 Marketing Plan</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--blue:#1F73FF;--ink:#16233c;--muted:#6b7a93;--line:#e7edf6;--bg:#f4f7fc;--soft:#eef4ff;}
-*{box-sizing:border-box}body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.62;}
-.topnav{position:sticky;top:0;background:var(--blue);padding:11px 22px;display:flex;gap:20px;align-items:center;font-size:13.5px;font-weight:600;z-index:10;}
-.topnav a{color:#fff;text-decoration:none;opacity:.92}.topnav a:hover{opacity:1;text-decoration:underline}.topnav .cur{color:#cfe0ff}
-.wrap{max-width:920px;margin:0 auto;padding:30px 24px 80px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:36px 42px;box-shadow:0 6px 22px rgba(28,52,99,.06)}
-h1{font-size:30px;font-weight:800;margin:0 0 6px}h2{font-size:20px;color:var(--blue);margin:34px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--soft)}
-h3{font-size:15px;margin:20px 0 6px}p{margin:9px 0}strong{font-weight:600}
-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px}th{background:var(--blue);color:#fff;text-align:left;padding:9px 11px}td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#fafcff}
-blockquote{margin:14px 0;padding:12px 16px;background:var(--soft);border-left:4px solid var(--blue);border-radius:8px}blockquote p{margin:0}
-ul{padding-left:20px}li{margin:5px 0}
-.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:24px}
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q3 Marketing Plan — Quarterly Leader Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1F73FF;--blue-d:#1559c4;--ink:#16233c;--muted:#6b7a93;--line:#e7edf6;--bg:#f4f7fc;--soft:#eef4ff;--soft2:#f6f9ff;--green:#1f9d6b;--amber:#c8870f;--red:#cf3a2c;--shadow:0 6px 22px rgba(28,52,99,.07);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Poppins',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
+.topbar{background:#16233c;color:#fff;padding:10px 22px;display:flex;gap:20px;align-items:center;font:600 13px/1 Poppins,sans-serif;flex-wrap:wrap}
+.topbar span{opacity:.85}.topbar a{color:#9fd0ff;text-decoration:none}.topbar a:hover{color:#fff}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px 90px}
+.hero{background:radial-gradient(1100px 360px at 12% -10%,#e3eeff 0%,rgba(227,238,255,0) 60%);padding:40px 0 6px}
+.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-size:11px;font-weight:600;letter-spacing:.07em;padding:6px 13px;border-radius:30px;text-transform:uppercase}
+h1{font-size:36px;font-weight:800;margin:14px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:14px;font-weight:500}
+.oneline{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:16px 20px;margin:20px 0 4px;font-size:15.5px;box-shadow:var(--shadow)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 4px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+.tile .n{font-size:24px;font-weight:800;color:var(--blue)}.tile .l{font-size:12px;color:var(--muted);font-weight:500;margin-top:2px}
+section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 30px;margin:18px 0;box-shadow:var(--shadow)}
+.sec-h{display:flex;align-items:center;gap:12px;margin:0 0 14px}
+.sec-n{flex:none;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--blue),#4d92ff);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+h2{font-size:20px;font-weight:700;margin:0}
+h3{font-size:15px;font-weight:600;margin:18px 0 7px;color:var(--blue-d)}
+p{margin:9px 0}strong{font-weight:600}.note{color:var(--muted);font-size:13.5px}
+ul{margin:8px 0;padding-left:20px}li{margin:5px 0}
+.funnel{display:flex;align-items:stretch;flex-wrap:wrap;margin:6px 0 8px}
+.step{flex:1;min-width:140px;background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:15px 18px}
+.step .big{font-size:28px;font-weight:800}.step .lab{font-size:12px;color:var(--muted);font-weight:500}.step.win .big{color:var(--blue)}
+.chev{display:flex;align-items:center;justify-content:center;color:#b9c6dc;font-size:20px;padding:0 10px}
+.callout{margin-top:12px;background:#fdecea;border:1px solid #f6cdc7;color:#9e2b20;border-radius:10px;padding:10px 15px;font-size:13px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mini{background:var(--soft2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.mini .t{font-weight:600;font-size:14.5px;margin-bottom:4px}.mini .d{font-size:13px;color:var(--muted)}
+.act{border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.act .top{display:flex;align-items:center;gap:11px;background:var(--soft2);padding:12px 18px;border-bottom:1px solid var(--line)}
+.act .cn{flex:none;width:25px;height:25px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.act .ttl{font-weight:600;font-size:15px}.act .body{padding:13px 18px;font-size:13.7px}
+.badge{font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-right:5px}
+.b-ent{background:var(--blue)}.b-lrg{background:#5a8de0}.b-mid{background:#9fb3cf}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.4px}
+th{background:var(--blue);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+td{padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#fafcff}
+.prereq{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:8px 0}
+.pr{background:var(--soft2);border:1px solid var(--line);border-radius:11px;padding:11px 14px;font-size:13.3px}
+.cta{background:linear-gradient(120deg,#eef4ff,#f6f9ff);border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin:18px 0}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase}
+.pill.dep{background:#e8f0fe;color:var(--blue-d)}.pill.dec{background:#fff4df;color:var(--amber)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tabs button{font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);background:var(--soft2);border:1px solid var(--line);padding:8px 14px;border-radius:30px;cursor:pointer}
+.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.panel{display:none}.panel.on{display:block}
+.phasebar{display:flex;gap:8px;margin:4px 0 12px}.phase{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px;border-radius:10px}
+.p1{background:#eef4ff;color:var(--blue-d)}.p2{background:#fff4df;color:var(--amber)}.p3{background:#e8f7ef;color:var(--green)}
+.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
+@media(max-width:760px){.tiles,.cards3,.prereq{grid-template-columns:1fr}h1{font-size:29px}}
 </style></head>
-<body><div class="topnav"><a href="../">← Home</a><a href="calendar/">📅 Calendar</a><a href="../year-one/">🌟 Year One</a><span class="cur">📋 Q3 Plan</span></div><div class="wrap"><div class="card"><h1>Q3 Marketing Plan (Jul–Sep 2026)</h1>
-<p><strong>Owner:</strong> Nandita Khanna · <strong>Reviewing:</strong> Q2 2026 (Apr–Jun) · <strong>Status:</strong> Working plan (living document)</p>
-<blockquote>
-<p>Signal Touch launch is a separate plan. This covers the core marketing engine.</p>
-</blockquote>
-<p><strong>In one line:</strong> Fix conversion, not volume — work a focused Top 50 + Next 200, hand sales fewer but higher-quality leads, and run only the activities that have actually produced SQLs, to hit <strong>10 SQLs in Q3</strong> while pre-building the October launch.</p>
-<hr />
-<h2>The goal</h2>
-<p>Marketing exists to create <strong>meetings that become SQLs</strong>. In Q2 we created plenty of engagement but converted very little of it — 82 relevant engagements turned into just 4 meetings and 5 SQLs (goal was 7). Q3 is about fixing that conversion on a clean, focused account list — not sending more.</p>
-<p><strong>Q3 target: 10 SQLs.</strong></p>
-<hr />
-<h2>Operating principles</h2>
-<ol>
-<li><strong>Focus on the few best-fit accounts, not the whole list</strong> — work the Top 50 + Next 200, not all 5,876.</li>
-<li><strong>Qualify hard; don't blast</strong> — give sales fewer, higher-quality leads to focus on, not mass.</li>
-<li><strong>Spend only where it works</strong> — every paid activity has an "is this working?" checkpoint; if it isn't producing meetings, we stop.</li>
-<li><strong>Prove it or it didn't happen</strong> — if we can't attribute and time it, we don't claim it. Close the tracking gap.</li>
-<li><strong>Lead with proof and good creative</strong> — events, case studies, interactive campaigns; product detail comes after.</li>
-</ol>
-<hr />
-<h2>Q2 performance &amp; the Q3 bet</h2>
-<h3>Q2 scorecard</h3>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Goal</th>
-<th>Actual</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Marketing-sourced SQLs</td>
-<td><strong>7</strong></td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td>Meetings</td>
-<td>—</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Relevant engagements</td>
-<td>—</td>
-<td>82</td>
-</tr>
-<tr>
-<td>Emails / campaigns</td>
-<td>—</td>
-<td>66,810 / 56</td>
-</tr>
-</tbody>
-</table>
-<p>We hit reach, not conversion — and the engine had narrowed to generic blasts, our weakest channel.</p>
-<h3>What's keeping me up at night</h3>
-<p><strong>1. Data gap.</strong> Only ~<strong>6%</strong> of records meet the full minimum standard — and neither system fills the gap alone. The fields we most need (title, LinkedIn, revenue, category) are thin in <em>both</em>:</p>
-<table>
-<thead>
-<tr>
-<th>Field fill</th>
-<th>Clarify</th>
-<th>HubSpot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Email</td>
-<td>80%</td>
-<td>~100%</td>
-</tr>
-<tr>
-<td>First / Last name</td>
-<td>99% / 19%</td>
-<td>— / 49%</td>
-</tr>
-<tr>
-<td>Job title</td>
-<td>48%</td>
-<td>29%</td>
-</tr>
-<tr>
-<td>LinkedIn</td>
-<td>51%</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Company (name)</td>
-<td>71%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>Company domain / LinkedIn</td>
-<td>99% / 71%</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Company revenue / category</td>
-<td>15% / 14%</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Clarify</strong> holds firmographics (domain, LinkedIn, region); <strong>HubSpot</strong> holds email + engagement + company name. Both are thin on title, LinkedIn, revenue and category — so we routinely engage the wrong POC.</p>
-<p><strong>2. Tracking gap.</strong> Marketing's contribution is unprovable today. We can track <strong>neither activation→SQL time nor attribution.</strong> Whatever we report, we can't prove.</p>
-<p><strong>3. Budget.</strong> Spend decisions (gifting, events, tooling) get made without marketing in the loop and without a "is this working?" test.</p>
-<h3>The core bet</h3>
-<p><strong>Convert ICP engagement into qualified meetings → SQLs</strong> — by focusing on the best-fit accounts and qualifying hard.</p>
-<h3>What the year proves works (so we do only this)</h3>
-<table>
-<thead>
-<tr>
-<th>Channel</th>
-<th>Engagements → SQLs</th>
-<th>Conversion</th>
-<th>Role</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Inbound (website/gated)</strong></td>
-<td>14 → 3</td>
-<td><strong>~5:1</strong></td>
-<td>Best quality — protect &amp; feed</td>
-</tr>
-<tr>
-<td><strong>Events (ReInvent-style)</strong></td>
-<td>14 → 2</td>
-<td><strong>~7:1</strong></td>
-<td>High-intent, Top 50</td>
-</tr>
-<tr>
-<td><strong>ABM + Game/interactive email</strong></td>
-<td>140 → ~6 clean</td>
-<td>~16:1 → target 12:1</td>
-<td>The workhorse</td>
-</tr>
-<tr>
-<td><strong>Webinar</strong></td>
-<td>69 → 2</td>
-<td>~35:1</td>
-<td>Awareness feeder, not a closer</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Deliberately NOT doing:</strong> generic playbook/blog blasts (≈0 SQLs), new channels (no paid/SEO), working the whole 5,876.</p>
-<h3>How we compete (competitor read)</h3>
-<ul>
-<li><strong>Capillary</strong> — enterprise-loyalty heavyweight. Wins on analyst recognition (Forrester Wave / Everest Leader), scale (1.9B members, 415+ brands), acquisitions, big events. We will <em>not</em> out-spend it on analysts or scale.</li>
-<li><strong>MoEngage / CleverTap</strong> — app-first, cross-channel engagement. Win on <strong>benchmark/industry reports</strong>, <strong>branded communities &amp; events</strong> (MoEngage #GROWTH), heavy <strong>case studies + G2 reviews</strong>, and an aggressive <strong>AI-agent / decisioning</strong> narrative.</li>
-<li><strong>Where Xeno wins:</strong> purpose-built for <strong>retail</strong> (POS / loyalty / transaction-connected, India + GCC), <strong>proven incremental revenue</strong> (Taco Bell +69% repeat, Bestseller +40% on digital, 60x ROI), and an <strong>autonomous decisioning</strong> story — "every retail marketer a manager of agents," not assistive AI.</li>
-<li><strong>So our playbook copies what works for challengers</strong> — retail-specific research, named case studies, intimate founder-led events, a sharp POV — and <strong>skips what we can't fund</strong> (analyst placements, mass events).</li>
-</ul>
-<h3>The 5 candidate activities (commit to 3 after the pitch)</h3>
-<p>All five are grounded in what produced SQLs this year <em>and</em> what the category does well:</p>
-<ol>
-<li><strong>Intimate events &amp; roundtables</strong> — Top 50; founder-led, retail-CXO rooms. Best SQL conversion all year (~7:1).</li>
-<li><strong>Webinar + retail research / benchmark</strong> — Rest + feeds all tiers; a "State of AI in Retail Marketing / Loyalty" report powers a <strong>thought-leadership-led webinar (not product-led)</strong> — it earns attention by sharing a point of view, with product as the follow-up.</li>
-<li><strong>ABM + interactive / game campaigns</strong> — Top 50 (personalised) + Next 200 (segmented); Xeno's creative edge (Squid Games, Loyalty Dilemma). The SQL workhorse.</li>
-<li><strong>Inbound + case-study / proof engine</strong> — all tiers; gated case studies (Taco Bell, Bestseller), ROI calculator, website forms. Highest quality per touch (~5:1).</li>
-<li><strong>Founder-led LinkedIn + agentic narrative (optional / aspirational)</strong> — Top 50 / 200 awareness; Pranav's POV on the decisioning story + Xeno Pulse. Low-cost and differentiated; include only if bandwidth allows.</li>
-</ol>
-<p><strong>My lean for the 3:</strong> #1 (events), #3 (ABM + game), #4 (inbound) as the SQL engine — with #2 (research + webinar) and #5 (founder LinkedIn) as awareness feeders if budget / bandwidth allow. Final call after the pitch.</p>
-<hr />
-<h2>The target — 10 SQLs, all in</h2>
-<p><strong>Commit: 10 SQLs. No middle option — we go all in, or not at all.</strong> Built bottom-up from each channel's real conversion rate (with better-qualified leads feeding sales):</p>
-<table>
-<thead>
-<tr>
-<th>Activity</th>
-<th>Tier served</th>
-<th>Conv. used</th>
-<th>SQLs</th>
-<th>Qualified engagements needed</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ABM + Game/interactive</strong></td>
-<td>Top 50 + Next 200</td>
-<td>12:1</td>
-<td>4</td>
-<td>~48</td>
-</tr>
-<tr>
-<td><strong>Events</strong></td>
-<td>Top 50</td>
-<td>7:1</td>
-<td>3</td>
-<td>~21</td>
-</tr>
-<tr>
-<td><strong>Inbound</strong></td>
-<td>All (self-select)</td>
-<td>5:1</td>
-<td>2</td>
-<td>~10</td>
-</tr>
-<tr>
-<td><strong>Webinar</strong></td>
-<td>Rest (+ feeds above)</td>
-<td>30:1</td>
-<td>1</td>
-<td>~30</td>
-</tr>
-<tr>
-<td><strong>Total</strong></td>
-<td></td>
-<td><strong>~11:1 blended</strong></td>
-<td><strong>10</strong></td>
-<td><strong>~110</strong></td>
-</tr>
-</tbody>
-</table>
-<p>This rests on three non-negotiables: marketing feeds <strong>better-qualified leads</strong> (fewer, higher-fit), <strong>sales works every hand-off within the 24h SLA</strong>, and the Top 50 / Next 200 lists get <strong>enriched on time</strong>. If those hold, 10 is real. Two things I'll start tracking weekly: the <strong>MQL→SQL ratio</strong> and <strong>activation→SQL time</strong> (both unmeasured today — fixing that is itself a commitment).</p>
-<blockquote>
-<p>All-in means ~110 qualified engagements vs. Q2's 82 — so this needs better targeting <strong>and</strong> more reach. That's the bet, made deliberately.</p>
-</blockquote>
-<hr />
-<h2>Who we go after (tiering)</h2>
-<table>
-<thead>
-<tr>
-<th>Tier</th>
-<th>~Size</th>
-<th>Motion</th>
-<th>Spend</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Top 50</strong> (strategic/enterprise)</td>
-<td>50</td>
-<td>Events + <strong>highly personalised ABM</strong>; rich data first</td>
-<td>Personalised gifting OK</td>
-</tr>
-<tr>
-<td><strong>Next 200</strong> (large/mid)</td>
-<td>200</td>
-<td>Category / job-title / dept-wise ABM; <strong>blanket gifting</strong>; event invites as 2nd priority once Top 50 exhausted &amp; target not met; rich data first</td>
-<td>Blanket only</td>
-</tr>
-<tr>
-<td><strong>Rest</strong> (long tail)</td>
-<td>remainder</td>
-<td>Interactive content + webinar (scaled)</td>
-<td>No paid</td>
-</tr>
-</tbody>
-</table>
-<p>Tiering logic: <strong>Top 50 = our highest-value / highest-revenue accounts</strong> (land big), <strong>Next 200 = closest ICP fit</strong> (highest propensity to convert), and the <strong>rest</strong> get scaled, low-touch coverage.</p>
-<hr />
-<h2>Qualifying harder — quality leads over mass</h2>
-<p>We hand sales fewer, higher-quality leads — not mass — by qualifying harder before the hand-off. Three steps:</p>
-<p><strong>1. Define what counts as an MQL.</strong> An engagement only qualifies if it clears two gates:
-- <strong>Fit</strong> — the account is on the Top 50 / Next 200 ICP list, <em>and</em> the person is a buyer or influencer (CRM, loyalty, marketing, growth, digital, e-commerce, or an IT decision-maker) — not HR, legal, or a junior contact.
-- <strong>Intent</strong> — a real signal, not a single open: demo / pricing / contact-form, repeat engagement, webinar or event attendance, or a completed game/quiz.</p>
-<p><strong>2. Score and route (simple 2×2).</strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>High intent</th>
-<th>Low intent</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>High fit</strong> (Top 50/200)</td>
-<td><strong>Hot</strong> → sales follow-up in 24h, book the meeting</td>
-<td><strong>Warm</strong> → tight ABM + event/webinar invite</td>
-</tr>
-<tr>
-<td><strong>Low fit</strong> (rest)</td>
-<td><strong>Watch</strong> → light nurture; enrich to confirm fit</td>
-<td><strong>Drop / suppress</strong> — out of the active list</td>
-</tr>
-</tbody>
-</table>
-<p>Only <strong>Hot</strong> (high-fit + high-intent) counts toward the MQL number we report and chase.</p>
-<p><strong>3. Catch it while warm.</strong> Every Hot engagement enters the 24h sales follow-up SLA, with the activity + asset logged — which is also how we finally start measuring activation→SQL time.</p>
-<p>What this gives sales: <strong>fewer, higher-quality leads to focus on</strong> instead of mass. And in any case, every Hot lead carries a <strong>24-hour sales reach-out SLA.</strong></p>
-<hr />
-<h2>Q3 calendar (Jul–Sep)</h2>
-<p>Activity is front-loaded into July–August because, at a ~4–6 week activation→SQL lead time, anything started after mid-September won't convert inside the quarter. Phase logic: <strong>July = activate, August = activate + early convert, September = convert.</strong></p>
-<table>
-<thead>
-<tr>
-<th>Week</th>
-<th>Events (Top 50)</th>
-<th>ABM + Game (Top 50/200)</th>
-<th>Inbound + Case studies</th>
-<th>Research + Webinar</th>
-<th>Founder LinkedIn</th>
-<th>Always-on / ops</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Jul W1</strong></td>
-<td>Lock event format + city</td>
-<td>Finalise + enrich Top 50</td>
-<td>Publish 1 case study; ROI calculator live</td>
-<td>Scope retail research</td>
-<td>Pranav POV post #1</td>
-<td>Dashboard live; tracking on</td>
-</tr>
-<tr>
-<td><strong>Jul W2</strong></td>
-<td>Build invite list</td>
-<td>ABM wave 1 → Top 50</td>
-<td>Gated case study push</td>
-<td>Field research survey</td>
-<td>POV post #2</td>
-<td>List clean-up / suppression</td>
-</tr>
-<tr>
-<td><strong>Jul W3</strong></td>
-<td>—</td>
-<td>Game campaign #1</td>
-<td>Inbound nurture</td>
-<td>—</td>
-<td>Customer story repost</td>
-<td>Enrich Next 200</td>
-</tr>
-<tr>
-<td><strong>Jul W4</strong></td>
-<td>Confirm speakers</td>
-<td>ABM wave 1 review</td>
-<td>Case study #2</td>
-<td>Research data in</td>
-<td>POV post #3</td>
-<td>Q2-vs-Q3 ratio check</td>
-</tr>
-<tr>
-<td><strong>Aug W1</strong></td>
-<td><strong>Roundtable #1 (Top 50)</strong></td>
-<td>ABM → Next 200 (segmented)</td>
-<td>Roundtable follow-up assets</td>
-<td>Webinar invites out</td>
-<td>Event teaser</td>
-<td>Gifting to Next 200</td>
-</tr>
-<tr>
-<td><strong>Aug W2</strong></td>
-<td>Roundtable follow-up mtgs</td>
-<td>Game campaign #2</td>
-<td>Case study #3</td>
-<td>Webinar reminders</td>
-<td>POV post #4</td>
-<td>Mid-funnel scoring</td>
-</tr>
-<tr>
-<td><strong>Aug W3</strong></td>
-<td>—</td>
-<td>ABM wave 2 → Top 50</td>
-<td>Inbound nurture</td>
-<td><strong>Webinar (live)</strong> + research launch</td>
-<td>Webinar amplification</td>
-<td>Data-standard checkpoint</td>
-</tr>
-<tr>
-<td><strong>Aug W4</strong></td>
-<td>Plan event #2 (if working)</td>
-<td>Webinar → SQL follow-up</td>
-<td>Case study #4</td>
-<td>Webinar replay nurture</td>
-<td>POV post #5</td>
-<td>Spend go/no-go review</td>
-</tr>
-<tr>
-<td><strong>Sep W1</strong></td>
-<td><strong>Event #2 (if on track)</strong></td>
-<td>Game campaign #3</td>
-<td>Proof assets refresh</td>
-<td>Post-webinar sequence</td>
-<td>Customer advocacy post</td>
-<td>Pipeline review</td>
-</tr>
-<tr>
-<td><strong>Sep W2</strong></td>
-<td>Event follow-up mtgs</td>
-<td>ABM → close gaps</td>
-<td>Inbound → meetings</td>
-<td>—</td>
-<td>POV post #6</td>
-<td>Mid-quarter ratio + spend review</td>
-</tr>
-<tr>
-<td><strong>Sep W3</strong></td>
-<td>2nd-priority invites to Next 200</td>
-<td>Push pipeline → SQLs</td>
-<td>Case-study close support</td>
-<td>—</td>
-<td>Advocacy post</td>
-<td>Attribution clean-up</td>
-</tr>
-<tr>
-<td><strong>Sep W4</strong></td>
-<td>—</td>
-<td>Final SQL push</td>
-<td>—</td>
-<td>Plan Q4 / launch research</td>
-<td>Q3 wrap post</td>
-<td>Q3 results vs 10; hand-off to launch</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>The columns map to the 5 candidate activities — once we lock 3 after the pitch, we keep those columns and drop the rest.</p>
-</blockquote>
-<hr />
-<h2>Early signals — what you'll see in the first 30 days</h2>
-<p>SQLs have a ~4–6 week lead time, so real SQLs land late August. These July proof-points show momentum <em>before</em> the number moves:</p>
-<ul>
-<li>Top 50 + Next 200 <strong>enriched to ≥50%</strong> of the minimum-data standard (from ~6%).</li>
-<li><strong>Tracking live:</strong> every Hot engagement logged with activity + asset; activation→SQL clock running.</li>
-<li><strong>Generic blasts stopped;</strong> first interactive campaign + ABM wave 1 shipped.</li>
-<li>First <strong>Hot hand-offs to sales within the 24h SLA.</strong></li>
-<li>Research fielded + webinar invites out; <strong>1–2 new case studies</strong> published.</li>
-</ul>
-<p>If these are in place by end-July, the SQLs follow. If they're not, we'll know early — not in September.</p>
-<hr />
-<h2>What I need from everyone — one SLA request board</h2>
-<p>All cross-team asks run through a single <strong>SLA-attached request board</strong> (visible to all). <strong>Pranav escalates any unexplained delay.</strong> The four recurring asks: <strong>quick action, real data, case studies, reviews.</strong></p>
-<table>
-<thead>
-<tr>
-<th>From</th>
-<th>What I need</th>
-<th>SLA</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Sales / AEs (Shadab)</strong></td>
-<td>Work ICP hand-offs → meeting; honest source tagging</td>
-<td>First touch <strong>24h</strong></td>
-</tr>
-<tr>
-<td><strong>SDR / Chaitra</strong></td>
-<td>Enrichment + buying-committee mapping (Top 50 + 200)</td>
-<td><strong>~30 accounts/wk</strong> (to confirm)</td>
-</tr>
-<tr>
-<td><strong>CS / Vinay</strong></td>
-<td>Case studies, reviews, references</td>
-<td><strong>1 / 2 wks</strong></td>
-</tr>
-<tr>
-<td><strong>Product / Leadership</strong></td>
-<td>Webinar speaker, real proof points</td>
-<td>per event</td>
-</tr>
-<tr>
-<td><strong>Pranav</strong></td>
-<td>Sign-off ICP list + attribution definition; escalate stalls</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>Budget — what I need, and the guardrails</h2>
-<p><strong>The ask (Q3 — lean and itemised):</strong> ~<strong>₹1.5–2L</strong>, every rupee tied to the SQL model. Most of it also pre-builds the October launch, so it isn't duplicate spend. I'll come back for more once it converts.</p>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Q3 spend</th>
-<th>Basis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Events / roundtables (2 × ~10 people, Top 50)</td>
-<td>₹1,00,000</td>
-<td>₹5,000 / person × 10 × 2</td>
-</tr>
-<tr>
-<td>Gifting (Top 50, triggered on "Hot")</td>
-<td>₹36,000</td>
-<td>12 gifts × ₹3,000</td>
-</tr>
-<tr>
-<td>Retail research + creative</td>
-<td>₹0–50,000</td>
-<td>Mostly in-house; doubles as launch research</td>
-</tr>
-<tr>
-<td>LinkedIn ABM / paid test (optional)</td>
-<td>₹0–50,000</td>
-<td>Small, contingency, kill-switch</td>
-</tr>
-<tr>
-<td><strong>Total</strong></td>
-<td><strong>~₹1.5–2L</strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>At this budget, the 10 SQLs come mostly from near-zero-cost channels (ABM, game campaigns, inbound, webinar) plus sales follow-up. So the real ask isn't money — it's <strong>sales alignment and the 24h hand-off.</strong></p>
-</blockquote>
-<p><strong>Guardrails:</strong>
-- Every paid activity has a <strong>success metric + go/no-go checkpoint</strong> (~2 weeks in). Not producing meetings → stop.
-- <strong>Personalised spend only for Top 50.</strong> Next 200 = <strong>blanket gifting only.</strong> Long tail = <strong>no paid.</strong>
-- No spend committed unless it ties to the SQL model above.</p>
-<hr />
-<h2>How I'll run it — calendar + live dashboard</h2>
-<ul>
-<li><strong>Calendar:</strong> every activity (campaigns, events, webinar, ABM waves, gifting) with dates + owners.</li>
-<li><strong>Live dashboard:</strong> activations → MQLs → meetings → SQLs vs. 10; per-activity status; spend vs. result; the two ratios. One view, for me and the review.</li>
-</ul>
-<hr />
-<h2>Alignment with the org plan (Signal Touch)</h2>
-<p>Signal Touch — Xeno's AI product line — launches mid-October. This Q3 plan is deliberately its <strong>foundation quarter</strong>: same tiers, same motions, built so nothing is wasted.</p>
-<ul>
-<li><strong>Tiers nest into the launch:</strong> our <strong>Top 50</strong> = Signal Touch's top-50 high-touch; <strong>Next 200</strong> ⊂ its top-500 outbound set; <strong>Rest</strong> ⊂ its 1,500-account awareness universe.</li>
-<li><strong>Do once, use twice:</strong> the <strong>retail research</strong>, <strong>named case studies</strong>, <strong>enriched Top 50 / 200 lists</strong>, and <strong>LinkedIn + WhatsApp (DPDP) setup</strong> we build now are exactly what the October launch needs — we're pre-building its assets.</li>
-<li><strong>Hand-off:</strong> Q3's <strong>10 SQLs + a warmed, enriched Top 50 / 200</strong> become the runway into the launch's goal of <strong>100 qualified meetings</strong> in 4–6 weeks.</li>
-<li><strong>Boundary:</strong> we do <strong>not</strong> execute the launch in this plan — we build the engine that makes it land. The launch itself stays in the Signal Touch plan.</li>
-</ul>
-<hr />
-<h2>Risks &amp; how we manage them</h2>
-<p>Being straight about this: <strong>10 is ~2.5–3x our clean run-rate (~3–4 SQLs/quarter).</strong> It's a deliberate all-in bet, and it depends on things partly outside marketing's hands. Naming them now:</p>
-<table>
-<thead>
-<tr>
-<th>Risk</th>
-<th>Mitigation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sales doesn't work hand-offs in time</td>
-<td>The 24h SLA on the request board, with Pranav escalating unexplained delays</td>
-</tr>
-<tr>
-<td>Enrichment slips → can't target right POC</td>
-<td>Enrich Top 50 first; SDR capacity confirmed up front; July checkpoint</td>
-</tr>
-<tr>
-<td>Attribution still messy → SQLs unprovable</td>
-<td>Lock the source definition next week; log every Hot hand-off from day one</td>
-</tr>
-<tr>
-<td>Events / webinar under-attended</td>
-<td>Front-load invites in July; co-host to fill the room; webinar as feeder, not the closer</td>
-</tr>
-<tr>
-<td>Late start eats the lead time</td>
-<td>Calendar front-loads July–Aug; anything past mid-Sep counts toward Q4</td>
-</tr>
-</tbody>
-</table>
-<p>If by <strong>mid-August</strong> we're below ~50% of pace, we reallocate spend and effort to whatever channel is converting, and flag it to Pranav early — not in the September review.</p>
-<hr />
-<h2>Open items to lock</h2>
-<ol>
-<li><strong>Target: 10 SQLs, all in</strong> — locked.</li>
-<li>The 3 activities (of the 5) — decide after the pitch.</li>
-<li>Final <strong>Top 50 / Next 200</strong> lists (validate for fit, not just size).</li>
-<li><strong>Data-standard %</strong> target by Sep; webinar + event dates.</li>
-<li>SLA specifics (enrichment volume/wk) + sign-off on the budget.</li>
-</ol><div class="foot">One source of truth · Q3 2026 · Nandita Khanna</div></div></div></body></html>
+<body>
+<div class="topbar"><span>Xeno Q3 — one source of truth:</span>
+<a href="/Xeno/">🏠 Home</a>
+<a href="/Xeno/Q3plan/">📋 Full Q3 Plan</a>
+<a href="/Xeno/Q3plan/calendar/">📅 Calendar</a>
+<a href="/Xeno/year-one/">🌟 Year One</a></div>
+
+<div class="hero"><div class="wrap" style="padding-bottom:0">
+<span class="tag">Xeno · Marketing · Quarterly Leader Brief</span>
+<h1>Q3 Marketing Plan</h1>
+<div class="meta">Nandita Khanna · Q3 2026 (Jul–Sep) · reviewing Q2 (Apr–Jun)</div>
+<div class="oneline"><strong>In one line:</strong> Fix conversion, not volume — work a focused Enterprise + Large list, hand sales fewer but higher-quality leads, and double down only on what has produced SQLs, to drive <strong>10 SQLs in Q3</strong> while pre-building the October launch.</div>
+</div></div>
+
+<div class="wrap">
+<div class="tiles">
+ <div class="tile"><div class="n">10</div><div class="l">Q3 SQL target — all in</div></div>
+ <div class="tile"><div class="n">5 / 7</div><div class="l">Q2 SQLs · actual / goal</div></div>
+ <div class="tile"><div class="n">50 · 200 · rest</div><div class="l">Enterprise · Large · Mid</div></div>
+ <div class="tile"><div class="n">~₹2L</div><div class="l">Q3 budget ask</div></div>
+</div>
+
+<!-- 1 -->
+<section>
+ <div class="sec-h"><div class="sec-n">1</div><h2>What's needed from marketing</h2></div>
+ <p>From Pranav's review and the Signal Touch org plan, the mandate is clear: marketing exists to create <strong>qualified meetings that become SQLs</strong> — and to pre-build the October Signal Touch launch. Not vanity reach, not activity for its own sake.</p>
+ <p>So this quarter is deliberately about <strong>conversion over volume</strong>: a focused account list, only the activities that have actually produced SQLs, and a clean hand-off to sales. The target is <strong>10 SQLs</strong> — a stretch we go all-in on; even if the real win is a system that lands it next quarter, that's success.</p>
+</section>
+
+<!-- 2 -->
+<section>
+ <div class="sec-h"><div class="sec-n">2</div><h2>What we did last year &amp; what worked</h2></div>
+ <p><strong>Built the engine from zero.</strong> A year ago there was no domain, no HubSpot, no infrastructure. Since then: full marketing + GTM / demand-gen ops, all email campaigns, LinkedIn + founder brand, 4 webinars/events, 24 demand-gen assets (excl. Shivalika's), client gifting, hyper-personalised ABM, multiple website updates, quarter-on-quarter planning, a hire, and <strong>~2,23,000 emails</strong> sent. Outcome: <strong>14 SQLs and 5 deals won</strong>, marketing-sourced or influenced.</p>
+
+ <h3>Q2 funnel</h3>
+ <div class="funnel">
+   <div class="step"><div class="big">82</div><div class="lab">Relevant engagements</div></div>
+   <div class="chev">→</div>
+   <div class="step"><div class="big">4</div><div class="lab">Meetings (logged)</div></div>
+   <div class="chev">→</div>
+   <div class="step win"><div class="big">5 <span style="font-size:15px;color:var(--muted)">/ 7</span></div><div class="lab">SQLs · actual / goal</div></div>
+ </div>
+ <div class="callout">The 82 → 5 drop isn't all failure. Some became meetings we didn't log, and many were worked then <strong>lost or turned out non-ICP</strong> — they just aren't captured. The tracking gap hides the true conversion, which is why fixing it is a Q3 prerequisite (below).</div>
+
+ <h3>What's actually working (so we double down)</h3>
+ <ul>
+  <li><strong>Events &amp; webinars</strong> — our highest-intent, highest-quality source.</li>
+  <li><strong>Inbound</strong> — best conversion per touch (when we can see where it came from).</li>
+  <li><strong>Interactive content</strong> — games + case studies (Squid Games, Loyalty Dilemma) drove our most recent SQLs.</li>
+  <li><strong>Client gifting</strong> — punched above its cost.</li>
+ </ul>
+ <p class="note">Note on the numbers: these are marketing-sourced <em>or influenced</em> — cleaning up that attribution is itself a Q3 commitment, not a claim to hide behind.</p>
+</section>
+
+<!-- 3 -->
+<section>
+ <div class="sec-h"><div class="sec-n">3</div><h2>Current challenges — what's keeping me up at night</h2></div>
+ <div class="cards3">
+   <div class="mini"><div class="t">1 · Data + tracking gap</div><div class="d">Revenue exists on only ~<strong>15%</strong> of accounts in Clarify — so true target marketing isn't possible yet. And we can't measure the time from engagement → SQL, or attribute it. Needs enrichment + a real attribution model (already discussed with Fahad &amp; Adrian).</div></div>
+   <div class="mini"><div class="t">2 · Visibility + accountability</div><div class="d">Across <strong>marketing → sales → CS</strong> there's no shared view of what's handed off, whether it's actioned, and what happens next — and ownership is unclear. We need one visible board and a clear line of accountability.</div></div>
+   <div class="mini"><div class="t">3 · Budget</div><div class="d">Spend decisions have been made without marketing in the loop. I've itemised exactly what's needed and tied every rupee to the plan (see the ask at the end).</div></div>
+ </div>
+</section>
+
+<!-- 4 -->
+<section>
+ <div class="sec-h"><div class="sec-n">4</div><h2>The plan</h2></div>
+
+ <h3>Setup &amp; prerequisites (these must be true first)</h3>
+ <div class="prereq">
+  <div class="pr"><strong>Clean, tiered, usable list</strong> — Enterprise / Large / Mid, enriched (especially revenue, today only ~15%).</div>
+  <div class="pr"><strong>Tracking + attribution live</strong> — engagement→SQL time + source, agreed with Fahad / Adrian.</div>
+  <div class="pr"><strong>MQL verification</strong> — I verify and refine leads before hand-off, so sales gets a tighter, higher-quality list.</div>
+  <div class="pr"><strong>2-working-day sales SLA</strong> + an escalation board everyone can see.</div>
+ </div>
+
+ <h3>Who we're targeting (tiers)</h3>
+ <p class="note"><span class="badge b-ent">Enterprise</span> Top 50 — highest revenue/value · <span class="badge b-lrg">Large</span> Next 200 — best ICP fit · <span class="badge b-mid">Mid</span> the rest — scaled, low-touch.</p>
+
+ <h3>The activities</h3>
+
+ <div class="act"><div class="top"><div class="cn">1</div><div class="ttl">Webinars + Events — thought leadership, not product</div></div>
+  <div class="body">
+   <p><strong>Webinar (all tiers):</strong> purely <strong>topical</strong>, with industry + customer speakers — a thought-leadership and community play, <em>not</em> a product showcase. This drives more pipeline than a demo webinar, because it earns trust first.</p>
+   <p><strong>Events (Enterprise):</strong> same ethos — a dinner + a topical panel / roundtable, with a customer and ~10 enterprise decision-makers in the room. <strong>3 this quarter: Mumbai, Dubai, Delhi.</strong></p>
+   <p class="note"><strong>Assumed result: ~4 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">2</div><div class="ttl">Multichannel outreach</div></div>
+  <div class="body">
+   <p><span class="badge b-lrg">Large</span> <strong>Filter-level ABM</strong> — segmented by job title, department, industry and geo.</p>
+   <p><span class="badge b-mid">Mid</span> <strong>Interactive content</strong> — case studies + games, run at scale.</p>
+   <p class="note"><strong>Assumed result: ~4 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">3</div><div class="ttl">Gifting</div></div>
+  <div class="body">
+   <p><span class="badge b-ent">Enterprise</span> personalised gifting, <strong>12 accounts this quarter</strong> (triggered when an account goes "Hot").</p>
+   <p class="note"><strong>Assumed result: enabler — lifts the Enterprise ABM / events conversion (~1 assist).</strong></p>
+  </div>
+ </div>
+
+ <div class="act"><div class="top"><div class="cn">4</div><div class="ttl">Inbound — tracking + a wider net</div></div>
+  <div class="body">
+   <p>Enable <strong>source tracking</strong> (which leads come from Google vs LinkedIn), then widen the net with <strong>low-effort</strong> levers: SEO, AEO, LinkedIn posts, backlinking — doubling down only where leads are already coming from.</p>
+   <p class="note"><strong>Assumed result: ~2 SQLs.</strong></p>
+  </div>
+ </div>
+
+ <table>
+  <tr><th>Activity</th><th>Tier</th><th>Assumed SQLs</th></tr>
+  <tr><td>Webinars + Events</td><td>All / Enterprise</td><td>~4</td></tr>
+  <tr><td>Multichannel outreach (ABM + interactive)</td><td>Large + Mid</td><td>~4</td></tr>
+  <tr><td>Inbound</td><td>All</td><td>~2</td></tr>
+  <tr><td>Gifting</td><td>Enterprise</td><td>enabler</td></tr>
+  <tr><td><b>Total</b></td><td></td><td><b>10</b></td></tr>
+ </table>
+ <p class="note">The whole principle: double down on what has produced SQLs; cut anything that has brought zero results.</p>
+</section>
+
+<!-- 5 CTA -->
+<section>
+ <div class="sec-h"><div class="sec-n">5</div><h2>To make this successful — collaboration + approvals</h2></div>
+
+ <h3>Collaboration I need</h3>
+ <table>
+  <tr><th>Type</th><th>What / who</th><th>By when</th></tr>
+  <tr><td><span class="pill dep">Sales</span></td><td>Action every passed lead (email / phone) within <strong>2 working days</strong>; tag source honestly; keep the board updated</td><td>per lead</td></tr>
+  <tr><td><span class="pill dep">Data (Chetan)</span></td><td>Enterprise + Large <strong>fully enriched</strong> (esp. revenue)</td><td>by 31 Aug</td></tr>
+  <tr><td><span class="pill dep">CS (Vinay)</span></td><td>Case studies + customer reviews / speakers for events &amp; webinars</td><td>1 / 2 weeks</td></tr>
+ </table>
+
+ <h3>Approvals only leadership can give</h3>
+ <table>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Attribution model / source definition</strong> — Fahad / Adrian (+ Pranav)</td><td>next week</td></tr>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Visibility + accountability</strong> — one weekly outcome review across marketing / sales / CS, one shared board, one clear line of alignment</td><td>this review</td></tr>
+  <tr><td><span class="pill dec">Decision</span></td><td><strong>Budget sign-off</strong> — itemised below</td><td>this review</td></tr>
+ </table>
+
+ <div class="cta">
+  <h3 style="margin-top:0">The budget ask — ~₹2L, every rupee tied to the plan</h3>
+  <table>
+   <tr><th>Item</th><th>Q3 spend</th><th>Basis</th></tr>
+   <tr><td>Events (3 × ~10 enterprise decision-makers — Mumbai, Dubai, Delhi)</td><td>₹1,50,000</td><td>₹5,000 / head × 10 × 3</td></tr>
+   <tr><td>Gifting (Enterprise, 12 accounts)</td><td>₹36,000</td><td>12 × ₹3,000</td></tr>
+   <tr><td>Webinar + content / creative</td><td>₹0–25,000</td><td>mostly existing tools + speakers</td></tr>
+   <tr><td>Inbound (SEO / AEO / LinkedIn / backlinks)</td><td>low / ₹0</td><td>low-effort, organic</td></tr>
+   <tr><td><b>Total</b></td><td><b>~₹2L</b></td><td></td></tr>
+  </table>
+  <p class="note">Guardrail: every paid activity gets a 2-week go/no-go — if it isn't producing meetings, we stop. Most of the 10 SQLs come from near-zero-cost channels; the real ask is <strong>sales follow-through and shared accountability</strong>, not spend.</p>
+ </div>
+</section>
+
+<!-- detail -->
+<section>
+ <div class="sec-h"><div class="sec-n">+</div><h2>Detail &amp; backup <span class="note" style="font-weight:400">— open what you want</span></h2></div>
+ <div class="tabs">
+   <button class="on" data-t="cal">📅 Calendar</button>
+   <button data-t="works">🏆 What works &amp; competitors</button>
+   <button data-t="data">📊 Data detail</button>
+ </div>
+ <div class="panel on" id="cal">
+   <div class="phasebar"><div class="phase p1">July — Activate</div><div class="phase p2">August — Activate + Convert</div><div class="phase p3">September — Convert</div></div>
+   <p class="note">Front-loaded (≈4–6 wk activation→SQL lead time): anything started after mid-September counts toward Q4. Full week-by-week view on the <a href="/Xeno/Q3plan/calendar/">Calendar page</a>.</p>
+ </div>
+ <div class="panel" id="works">
+   <ul>
+    <li><strong>Capillary</strong> — enterprise-loyalty heavyweight (analyst badges, scale). We don't out-spend it.</li>
+    <li><strong>MoEngage / CleverTap</strong> — app-first; win on benchmark reports, branded events/communities, case studies, AI-agent narrative.</li>
+    <li><strong>Where Xeno wins</strong> — purpose-built for retail (India + GCC), proven incremental revenue (Taco Bell +69%, Bestseller +40%), autonomous decisioning.</li>
+    <li>So we copy what works for challengers — topical research, named case studies, intimate events — and skip what we can't fund.</li>
+   </ul>
+ </div>
+ <div class="panel" id="data">
+   <table>
+    <tr><th>Field fill</th><th>Clarify</th><th>HubSpot</th></tr>
+    <tr><td>Email</td><td>80%</td><td>~100%</td></tr>
+    <tr><td>First / Last name</td><td>99% / 19%</td><td>— / 49%</td></tr>
+    <tr><td>Job title</td><td>48%</td><td>29%</td></tr>
+    <tr><td>Company revenue / category</td><td>15% / 14%</td><td>—</td></tr>
+   </table>
+   <p class="note">Only ~6% of records meet a full minimum standard — which is why enrichment is a prerequisite, not a nice-to-have.</p>
+ </div>
+</section>
+
+<div class="foot">Working document · Nandita Khanna · Q3 2026</div>
+</div>
+<script>
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+ b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
+}));
+</script>
+</body></html>
